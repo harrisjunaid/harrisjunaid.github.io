@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harris Junaid</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  
+  <!-- Core themes CSS-->
+  <link rel="stylesheet" src="/css/navbar.css">
+  <link rel="stylesheet" src="/css/about.css">
+
+</head>
+
+<!--navbar.css-->
+<style>
+    /* .navigation {
+  width: 100%;
+  positoin: relative;
+  min-height: 60px;
+  z-index: 1000;
+} */
+
+.navbar-light .navbar-brand {
+    border: 2px solid red;
+    color: #2299aa !important;
+    font-size: 2rem;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #333333;
+    font-weight: 600;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.btn{
+    background-color: #2299aa !important;
+    border-radius: 2rem !important;
+    color: #ffffff !important;
+    border: #2299aa !important; 
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+</style>
+
+<!--about.css-->
+<style>
+    .banner.text {
+  border: 2px solid red !important; 
+    background-color: hsla(300, 6%, 79%, 0.7) !important ;
+  }
+  
+  div.banner-intro {
+    border: 2px solid red;
+    background-image: url("https://lh3.googleusercontent.com/n4dbYI6Tbhg9DMOcEH8-xadLeeCGj3NZ1SWvdsBuwckJeM9jRHEqJ6497DlYs7JvWmNBfy-ubkwQ9_ChApd9UhxHrP90fp06VAvO8qBmAkRrWPUdRxZvn0cj1HzJcY_f0uB3VBUnfVfs5DKrmvnnFqOz0yZ-pJ5WRO3u0pflrIxBYVku2k0El6mVYMq1pfCCOerb9eclFvl3Zihp_Zct2UdP4cBbzjzU_jmZl4RLDRXZ8_QCihGnB3Svn1NrXx032O_XXoC15cZ3UE0sfLm_2x9NF9Go560Zb5__Qiy2uWx5prC0gBZVI3Zxgeuod-X8kva7bXfgVe6eIJBUd-G5FoZmkaSBsELi0nDkAiG8nbi6WhMbcXUr8OBVINvlQSK4odEccE_-tbgZgygVMELc_C3XRvolkFkXYRpt6k2eydBp-D5HKQy8hUryjKVXu8W2t9_algwl1IfXDGFzvvpt7yKt9trNlRqhSkOwydcy8i-_-mlpwZuXLz85liveOrJuEjR4cUOgHa1-sIM0os6QNYcGXRoGBySA2kzHh7D_vPAKaquVql_NGhL9NWLEKrV15tsU-1P7CPEM20SzzDSOMkjHry1NQ28g6J3XUhOdrrvxuJsizuouX297ILPxe2v7TesrpqA35ka8rUm29kAR25nBw1TulkpItbRA7w0yEszLLUDjhEmWEgCZtNmJdqGIsDWJ2yeweBF-pMLaUdWkLjGIXOpeWZEQ6TKj3iQ_F5s2JpZ9o78sDg9gJ7JjGOf4HvFrUPOxx1l2ZpKdKteIjAA7fjLxuH_JRkCQbvlHkHb92GG7DUxRH2fQ53oMfR6qs6wZssW0KDA6-c41xPQMpUQIrSqrnrXHeg2M4bsa_iBKF5c-uVTW7N_-dPIO8PNMaX4AbKEq7ntcN8ldGEFQTmLci4rDDE_pMR5AWQZv3-dJMCjhTxE5Ohal9534xCprC3XjAmX02NvYdwh4MS8lUoZwdBZOjSsKTeVT7vttLQCU6olUhrvkv2C2=w2560-h1440-no?authuser=0") !important;
+    background-repeat: no-repeat;
+    background-size: cover; /*cover the entire background*/
+    /*   background-blend-mode: screen, normal; */
+  }
+  
+</style>
+
+<!--portfolio.css-->
+<style>
+
+@media (max-width: 780px) {
+  div.card img.card-img-top {
+    display:none;
+  }
+
+  div.card div.card-body {
+  margin-bottom: 15px;  /*space between*/  
+    min-height: 50vh;
+  background-image: url('https://pixelprowess.com/i/mug-rex.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; /*cover the entire background*/
+  /*   background-blend-mode: screen, normal; */
+  }
+
+div.card-body .card-text {
+  margin-top: 15px; /*gap from card-title */
+}
+
+
+}
+
+div.container {
+  border: 2px solid brown;
+}
+
+div.row {
+  border: 2px solid red;
+  height: 50vh;
+}
+
+div.col {
+  /* border: 2px solid blue; */
+  overflow: hidden;
+}
+
+div.card {
+  border: 3px dashed green;
+  max-height: 50vh;
+  
+}
+
+div.card img.card-img-top {
+  /* border: 2px dashed green; */
+  /* src: var(--PacMen-png); */
+}
+
+div.card div.card-body {
+  /* border: 3px dotted red; */
+  /* background-color: blue !important; */
+   /* height: ; */
+  
+   
+}
+
+div.card-body .card-title {
+  /* border: 2px solid blue; */
+  text-align: center; 
+
+}
+
+div.card-body .card-text {
+  /* border: 2px solid blue; */
+  
+}
+
+a.card-link {
+  color: green;
+  background-color: hsla(70, 4%, 72%, .6);
+}
+</style>
+
+<!--certification.css-->
+<style>
+.portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.portfolio-item .portfolio-item-caption {
+  border: 4px solid red;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: rgba(26, 188, 156, 0.9);
+}
+.portfolio-item .portfolio-item-caption:hover {
+  opacity: 1;
+}
+
+.portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+
+.portfolio-modal .btn-close {
+  color: #1abc9c;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.portfolio-modal .portfolio-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+@media (min-width: 780px) {
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+</style>
+
+<body id="page-top" class="position-relative" data-bs-spy="scroll">
+
+
+    <!-- <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"
+  ></script> -->
+
+
+  <!-- Navigation: navbar -->
+  <!-- ================== -->
+  <header>
+  <section class="navigation">
+    <!-- nav tag with navbar classs -->
+    <!--               bg-{COL}   light/dark   navbar-expnad-{BR} -->
+    <nav class="navbar navbar-light navbar-expand-lg text-uppercase fixed-top" id="mainNav">
+      <div class="container">
+        <!-- container: align the text inside the navbar to the Bootstrap grid -->
+        <!-- navbar-brand: branding text or an image -->
+        <a href="#" class="navbar-brand">
+          <img src="https://pixelprowess.com/i/binaryville-icon.png" width="45" width="45" alt="Binaryville Icon">Binaryville
+        </a>
+        <!-- hamburger menu: navbar-toggler navigation wrapper and displayed with navbar-toggler-icon -->
+        <!-- data-bs-toggle="collapse": button that's going to collapse things.-->
+        <!-- aria-controls="navbarResponsive": what to collapse -->
+        <!-- aria-expanded="false": initially section is going to be not expanded -->
+        <!-- aria-label="Toggle navigation": for assistive devices -->
+        <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- wrapper for collapsable elements  -->
+        <!-- id to target it with a button -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <!--ul class="navbar-nav navbaar-nav-scroll ms-auto" style="--bs-scroll-height: 20;" > -->
+          <ul class="navbar-nav ms-auto">
+            <!-- nav-item: each navigation item -->
+            <!-- nav-link: where links go -->
+            <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn" href="#home">Home</a></li>
+            <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn" href="#certifications">Certifications</a></li>
+            <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn" href="#about">About</a></li>
+            <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <form class="d-flex ms-3  d-none d-lg-inline">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">go</button>
+        </form>
+      </div>
+    </nav>
+  </section>
+  </header>
+  
+
+  <main>
+  <!-- About Section -->
+  <!-- ================== -->
+  <section class="banner">
+    <div class="banner container position-relative ">
+  
+      <div class="banner-intro row justify-content-sm-center overflow-hidden">
+        <div class="col-xs-12 col-lg-5 overflow-hidden order-lg-2 py-5 px-2">
+          <div class="banner text d-grid gap-2 position-relative">
+            <h1>Hi, I'm Harris Junaid the Full Stack Developer</h1>
+            <p class="ps-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. t laborum natus qui ad fugiat aspernatur magnam!</p>
+            <img class="d-none d-lg-block rounded-pill img-fluid w-50 position-absolute top-100 end-0" src="https://lh3.googleusercontent.com/xMcmym4oMATnMowXU2kIhhMk0i5jWxTv-IDCJot3B6jVijXdr1TagVY81pAzknVPcvR9XJJH1p0-z-2DRSyioLGToe1fOVenyK4x47NwWtPt4v8M7wsKYuB74MjTue-AWcIOglhPx-wrLV_XiCvYIYTvUOtA2d873aLjagrelm_dTDa82AxtINrkzCm-gkjrg9YJ3jLt9aoVY2TVYXQzPX_tHD690dDHnvEhO0DPNN1nnO4607EiY3PAxMuPMAsopx_4XJSMiM5VzQ7XBBtU2-QqLjD6cIlLRoIBJqzqUB8NM8iuO8WoKIF2aD3VfUNviDhh4rIpGUhcUN8m1HJAejo6iA67NOoZWpY5-flnwvSfy_Un9pjzW5zX7Adlgv9EDNyY39v-m-pZiM8Mu9TvxOVxDW6jPj0Guq-0tkzOq7WuGu4HhhTeQncCkSrG91tBTqtZqjWhyqg7eA_GDJiQuswUw92hJFiw6r6-lZ4fKrcO3jugyIf7zBLRyigrnH-HDe3wjdIcgQ4mqzjOkATHeeaL6eS1PVHSXi_1nOtrOCpodii-RubEyFOHq3pg7bLH9TAemSfLbKUZ4Y5dJQmmSHLuP0iaJRRaHbU_Rblk2xScU5057PJDXvZBESqQaJ5xjxUDhInPmUj_4C80SkwZiBY8K_Wh-DGprDedATCjYnsMFQIDxOD4pufy8PODPgUiGUd_lt-Bk9IWqdHZ3m559WNmuAF5sH0je9rXt7I5DCjqyUt-XN4S4Vf_M93_ChvvRxNCXUsyd4WSbKxtBMAnp9Y5Whso4ZeBb-XtHojnJV805C2Kp6e8o7amAuB4doK4ATPZPDccqwYbkz40ZJ5DiPZiDNlDEdhPwLStBqcW7cF67GQq_Ax8wVjXe_0rBL_-bX-ICah87bEYjvyn8lWhBymmNhoC7Wda1zNWAY7ny4mB8cSeMUihH-KIv-ya9QM6POMHc_WxqpzyAa7B7S27jMHKBM8w19K_mL7DpQ1TorQylL1FUEgCdf4g=w854-h851-no?authuser=0" alt="Harris Junaid image">
+          </div>
+        </div>
+  
+        <div class=" w-auto col-auto  order-lg-1 py-5 px-2 me-5">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TLb0FyS2p2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col accordion" id="curriculum-vitae">
+          <div class="accordion-item">
+            <h2 id="regularHeadingFirst" class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#regularCollapseFirst" aria-expanded="true" aria-controls="regularCollapseFirst">
+                Curriculum Vitae
+              </button>
+            </h2>
+            <div id="regularCollapseFirst" class="accordion-collapse collapse show" aria-labelledby="regularHeadingFirst" data-bs-parent="#curriculum-vitae">
+              <div class="accordion-body">
+                <iframe src="https://onedrive.live.com/embed?cid=DA2B8446ED8A7024&resid=DA2B8446ED8A7024%2198338&authkey=AMBm-1s-hF5gS9w&em=2" width="100%" height="600px"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio          -->
+  <!-- ================== -->
+  <section class="portfolio">
+    
+<div class="container my-5">
+    <div class="row bg-primary row-cols-1 row-cols-md-3">
+    
+  <!-- Bouncing-PacMen -->
+  <!-- =============== -->   
+  <div class="col bg-warning">
+    <div class="card h-100" >
+      <img class="card-img-top" src="https://pixelprowess.com/i/mug-rex.jpg" alt="PacMen project image">
+      <div class="card-body">
+        <h4 class="card-title text-secondary">Bouncing-PacMen</h4>
+        <p class="card-text lh-sm   overflow-auto">This game logic is based on the addition of an image to the DOM and the recording of its x and y coordinates and x and y velocities. Scale for velocity ranges from 0 to 10 while scale for velocity ranges from 0 to 200. The callback makePac() returns an object with velocity and position, as well as an image tag pointer. It is pushed into the pacMen array using the pacMen.push method. The 'Timeout' calling function, update(), calls itself. The 'position' and'velocity' attributes in the shadow DOM. This then updates it in the actual DOM. The 'checkCollisions' method detects collisions by computing element velocity and width in advance.</p>
+        <a href="#" class="card-link btn btn-secondary mt-auto position-absolute top-0 start-0">CodePen</a>
+         <a href="https://github.com/harrisjunaid/Bouncing-PacMen " target="_blank" class="card-link btn btn-secondary mt-auto position-absolute top-0 end-0">GitHub</a>
+      </div>
+    </div>  
+  </div>
+      
+  
+  <!-- Eye-Movement -->
+  <!-- =============== -->   
+  <div class="col bg-warning">
+    <div class="card h-100" >
+      <img class="card-img-top" src="https://pixelprowess.com/i/mug-rex.jpg" alt="Eye Movement project image">
+      <div class="card-body">
+        <h4 class="card-title text-secondary">Eye-Movement</h4>
+        <p class="card-text lh-sm   overflow-auto">This exercise employs animation techniques programmatically and dynamically. When index.html is executed, a pair of eyes will follow the mouse pointer.</p>
+        <a href="#" class="card-link btn btn-secondary mt-auto position-absolute top-0 start-0">CodePen</a>
+         <a href="https://github.com/harrisjunaid/Eye-Movement" target="_blank" class="card-link btn btn-secondary mt-auto position-absolute top-0 end-0">GitHub</a>
+      </div>
+    </div>  
+  </div>    
+      
+      
+  </div>
+  </div>
+  
+  </section>
+
+  <!-- Certifications     -->
+  <!-- ================== -->
+  <section class="certificatoins">
+    <div style="positon: relative;">
+        <div class="row justify-content-center bg-warning">
+          <!-- Portfolio Item 1-->
+          <div class="col-md-6 col-lg-4 mb-5">
+            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+              <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background: blue;">
+                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+              </div>
+              <img class="img-fluid" src="https://lh3.googleusercontent.com/7ZdFpFwBRE9x4IhLPo6yvlz8lSZWlxouIGdhc4emju9PAyuxQz4ctDH1sCq4wzmVN53iSYymQUxM6LOvzgxJO8eUWqXQ4UliPcYHlgyrQ7VZv4X_WvtsZ8_Kwj6ssi3Rn9VZQuokLo2n-TEMbMTZY_oF3m5p95h2iBPkjatUBtiX9cbmbpd-lreRRADkp1woNqqAxL-34LySd7OqYqexaZc1zzNvcb4moTBKt0XNMwZe6YO-qRLKJgFajuRwnpjtbUYI4z70YIRzWfssGo_R33eAaDzJmdMMxDpNtM_b2_Ikbu2yXCHLpTl4aXc8GgF6z6OgvveERdmec6oTlXWBupke1xiNQkC-vFeXnx9e07sUzdso2lMpGq44EkVB072l6eonk95FfBazN1DSkeRju9NxiZ60lQcsykj2IJ7MCWY4yrufSYnWfDaYZTUIg6oGjNgb4R1__PapH3c0UyAsYGENt6jB769Tn_Msdkg4TBFxf4ezmClTp14eIF5yDX9rUjcGqLy5_c93mm1cVa7cDuv21lbMZaAAfe92L591erUsv9NBhtf8CrBOhBeiKdwdKB2crPQK8al5odl1oq9fQRH4QISQPPVwsCJjoyzRkwiBtN2D7ZXNJxBNBQEX5oY_YoS5kQ00f-n-wGa00dUTBRWY0l2PVBjLKrjanl_dPimqcFmVjKfbs0umZFwiZEqZb8kcO4CrCCNj-dIj6jXrzWpOvFCGAnOE81dkoB6_kSPHIaVDruLSAndNdl9IpsDrJdp4n9MJ8IwDCUna-qPFVp4WiXFUJi6jXwpYviYt-LZNZqPhStTGP0PEXT0fLfaBNJb0O07oHdoKN245k50eeF5HlOH01269eDeEFQaVq53lzBoDII6sN8h9c0WTgKaIsTrxEsLLcEsSNN0yiCoPDEj1zevJCwRt9KbYEXywYiAHE7LPu0pQ1pFrf6AwrBZiiqWe4a4vQDF46XnSos4nxSq0acxvwuczCUiTxfHXXgyCcVv_0OOy89Dw=w1056-h816-no?authuser=0" alt="..." />
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      
+      <!-- Portfolio Modals-->
+      <!-- Portfolio Modal 1-->
+      <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="modal-body text-center pb-5">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                    <!-- Portfolio Modal - Title-->
+                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                    <!-- Icon Divider-->
+                    <div class="divider-custom">
+                      <div class="divider-custom-line"></div>
+                      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                      <div class="divider-custom-line"></div>
+                    </div>
+                    <!-- Portfolio Modal - Image-->
+                    <img class="img-fluid rounded mb-5" src="https://lh3.googleusercontent.com/7ZdFpFwBRE9x4IhLPo6yvlz8lSZWlxouIGdhc4emju9PAyuxQz4ctDH1sCq4wzmVN53iSYymQUxM6LOvzgxJO8eUWqXQ4UliPcYHlgyrQ7VZv4X_WvtsZ8_Kwj6ssi3Rn9VZQuokLo2n-TEMbMTZY_oF3m5p95h2iBPkjatUBtiX9cbmbpd-lreRRADkp1woNqqAxL-34LySd7OqYqexaZc1zzNvcb4moTBKt0XNMwZe6YO-qRLKJgFajuRwnpjtbUYI4z70YIRzWfssGo_R33eAaDzJmdMMxDpNtM_b2_Ikbu2yXCHLpTl4aXc8GgF6z6OgvveERdmec6oTlXWBupke1xiNQkC-vFeXnx9e07sUzdso2lMpGq44EkVB072l6eonk95FfBazN1DSkeRju9NxiZ60lQcsykj2IJ7MCWY4yrufSYnWfDaYZTUIg6oGjNgb4R1__PapH3c0UyAsYGENt6jB769Tn_Msdkg4TBFxf4ezmClTp14eIF5yDX9rUjcGqLy5_c93mm1cVa7cDuv21lbMZaAAfe92L591erUsv9NBhtf8CrBOhBeiKdwdKB2crPQK8al5odl1oq9fQRH4QISQPPVwsCJjoyzRkwiBtN2D7ZXNJxBNBQEX5oY_YoS5kQ00f-n-wGa00dUTBRWY0l2PVBjLKrjanl_dPimqcFmVjKfbs0umZFwiZEqZb8kcO4CrCCNj-dIj6jXrzWpOvFCGAnOE81dkoB6_kSPHIaVDruLSAndNdl9IpsDrJdp4n9MJ8IwDCUna-qPFVp4WiXFUJi6jXwpYviYt-LZNZqPhStTGP0PEXT0fLfaBNJb0O07oHdoKN245k50eeF5HlOH01269eDeEFQaVq53lzBoDII6sN8h9c0WTgKaIsTrxEsLLcEsSNN0yiCoPDEj1zevJCwRt9KbYEXywYiAHE7LPu0pQ1pFrf6AwrBZiiqWe4a4vQDF46XnSos4nxSq0acxvwuczCUiTxfHXXgyCcVv_0OOy89Dw=w1056-h816-no?authuser=0" alt="..." />
+                    <!-- Portfolio Modal - Text-->
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                      <i class="fas fa-xmark fa-fw"></i>
+                      Close Window
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  </main>
+
+  <footer>
+
+  </footer>
+  <!-- Bootstrap-->
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+  crossorigin="anonymous"></script>
+</body>
+</html>
