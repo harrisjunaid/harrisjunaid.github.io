@@ -27,24 +27,24 @@
 } */
 
 .navbar-light .navbar-brand {
-    border: 2px solid red;
+    /* border: 2px solid red;
     color: #2299aa !important;
-    font-size: 2rem;
+    font-size: 2rem; */
 }
 .navbar-light .navbar-nav .nav-link {
-	color: #333333;
+	/* color: #333333;
     font-weight: 600;
     padding-left: 1.2rem;
-    padding-right: 1.2rem;
+    padding-right: 1.2rem; */
 }
 
 .btn{
-    background-color: #2299aa !important;
+    /* background-color: #2299aa !important;
     border-radius: 2rem !important;
     color: #ffffff !important;
     border: #2299aa !important; 
     padding-left: 2rem;
-    padding-right: 2rem;
+    padding-right: 2rem; */
 }
 
 </style>
@@ -52,7 +52,7 @@
 <!--about.css-->
 <style>
     .banner.text {
-  border: 2px solid red !important; 
+  /* border: 2px solid red !important;  */
     background-color: hsla(300, 6%, 79%, 0.7) !important ;
   }
   
@@ -91,17 +91,17 @@ div.card-body .card-text {
 }
 
 div.container {
-  border: 2px solid brown;
+  /* border: 2px solid brown; */
 }
 
 div.row {
-  border: 2px solid red;
-  height: 50vh;
+  /* border: 2px solid red; */
+  /* height: 50vh; */
 }
 
 div.col {
   /* border: 2px solid blue; */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 div.card {
@@ -168,17 +168,17 @@ a.card-link {
   font-size: 1.5rem;
 }
 
-.portfolio-modal .btn-close {
+.cert-modal .btn-close {
   color: #1abc9c;
   font-size: 2rem;
   padding: 1rem;
 }
-.portfolio-modal .portfolio-modal-title {
+.cert-modal .cert-modal-title {
   font-size: 2.25rem;
   line-height: 2rem;
 }
 @media (min-width: 780px) {
-  .portfolio-modal .portfolio-modal-title {
+  .cert-modal .cert-modal-title {
     font-size: 3rem;
     line-height: 2.5rem;
   }
@@ -188,8 +188,8 @@ a.card-link {
 
 <!--footer.css-->
 <style>
-    .footer {
-  padding-top: 5rem;
+  header,  .footer {
+  padding-top: 1rem;
   padding-bottom: 5rem;
   background-color: #2c3e50;
   color: #fff;
@@ -200,35 +200,49 @@ a.card-link {
 }
 </style>
 
-<body id="page-top" class="position-relative" data-bs-spy="scroll">
+<style>
+    :root {
+        --cert-first: url('/images/certificates/CertificateOfCompletion_Create\ a\ Quick\ Clean\ and\ Cheap\ Website\ with\ Bootstrap\ Templates-01.jpg');
+    }
+
+    img.item-first {
+        src: var(--cert-first);
+    }
+    header {
+        height: 10vh;
+    }
+
+    main {
+        /* height: 80vh; */
+    }
 
 
-    <!-- <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"
-  ></script> -->
+    footer {
+        
+    }
+</style>
 
+<body id="page-top" class="position-relative bg-warning" data-bs-spy="scroll">
 
   <!-- Navigation: navbar -->
   <!-- ================== -->
-  <header>
-  <section class="navigation">
+  <header class="#">
+  <section class="navigation text-uppercase">
     <!-- nav tag with navbar classs -->
     <!--               bg-{COL}   light/dark   navbar-expnad-{BR} -->
     <nav class="navbar navbar-light navbar-expand-lg text-uppercase fixed-top" id="mainNav">
-      <div class="container">
+      <div class="container position-sticky">
         <!-- container: align the text inside the navbar to the Bootstrap grid -->
         <!-- navbar-brand: branding text or an image -->
         <a href="#" class="navbar-brand">
-          <img src="https://pixelprowess.com/i/binaryville-icon.png" width="45" width="45" alt="Binaryville Icon">Binaryville
+          <img src="https://pixelprowess.com/i/binaryville-icon.png" width="45" width="45" alt="Icon">
         </a>
         <!-- hamburger menu: navbar-toggler navigation wrapper and displayed with navbar-toggler-icon -->
         <!-- data-bs-toggle="collapse": button that's going to collapse things.-->
         <!-- aria-controls="navbarResponsive": what to collapse -->
         <!-- aria-expanded="false": initially section is going to be not expanded -->
         <!-- aria-label="Toggle navigation": for assistive devices -->
-        <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fas fa-bars"></i>
         </button>
@@ -240,9 +254,9 @@ a.card-link {
             <!-- nav-item: each navigation item -->
             <!-- nav-link: where links go -->
             <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn" href="#home">Home</a></li>
+            <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn" href="#about">About</a></li>
             <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn" href="#portfolio">Portfolio</a></li>
             <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn" href="#certifications">Certifications</a></li>
-            <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn" href="#about">About</a></li>
             <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn" href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -260,7 +274,7 @@ a.card-link {
   <!-- About Section -->
   <!-- ================== -->
   <section class="banner">
-    <div class="banner container position-relative ">
+    <div class="banner container">
   
       <div class="banner-intro row justify-content-sm-center overflow-hidden">
         <div class="col-xs-12 col-lg-5 overflow-hidden order-lg-2 py-5 px-2">
@@ -341,148 +355,356 @@ a.card-link {
   <!-- ================== -->
   <section class="certificatoins">
     <div style="positon: relative;">
-        <div class="row justify-content-center bg-warning">
+        <div class="row justify-content-center">
+
             <!-- Certification Item 1-->
             <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background: blue;">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#certModal1">
+                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" ">
                     <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                 </div>
-                <img class="img-fluid" src="https://lh3.googleusercontent.com/7ZdFpFwBRE9x4IhLPo6yvlz8lSZWlxouIGdhc4emju9PAyuxQz4ctDH1sCq4wzmVN53iSYymQUxM6LOvzgxJO8eUWqXQ4UliPcYHlgyrQ7VZv4X_WvtsZ8_Kwj6ssi3Rn9VZQuokLo2n-TEMbMTZY_oF3m5p95h2iBPkjatUBtiX9cbmbpd-lreRRADkp1woNqqAxL-34LySd7OqYqexaZc1zzNvcb4moTBKt0XNMwZe6YO-qRLKJgFajuRwnpjtbUYI4z70YIRzWfssGo_R33eAaDzJmdMMxDpNtM_b2_Ikbu2yXCHLpTl4aXc8GgF6z6OgvveERdmec6oTlXWBupke1xiNQkC-vFeXnx9e07sUzdso2lMpGq44EkVB072l6eonk95FfBazN1DSkeRju9NxiZ60lQcsykj2IJ7MCWY4yrufSYnWfDaYZTUIg6oGjNgb4R1__PapH3c0UyAsYGENt6jB769Tn_Msdkg4TBFxf4ezmClTp14eIF5yDX9rUjcGqLy5_c93mm1cVa7cDuv21lbMZaAAfe92L591erUsv9NBhtf8CrBOhBeiKdwdKB2crPQK8al5odl1oq9fQRH4QISQPPVwsCJjoyzRkwiBtN2D7ZXNJxBNBQEX5oY_YoS5kQ00f-n-wGa00dUTBRWY0l2PVBjLKrjanl_dPimqcFmVjKfbs0umZFwiZEqZb8kcO4CrCCNj-dIj6jXrzWpOvFCGAnOE81dkoB6_kSPHIaVDruLSAndNdl9IpsDrJdp4n9MJ8IwDCUna-qPFVp4WiXFUJi6jXwpYviYt-LZNZqPhStTGP0PEXT0fLfaBNJb0O07oHdoKN245k50eeF5HlOH01269eDeEFQaVq53lzBoDII6sN8h9c0WTgKaIsTrxEsLLcEsSNN0yiCoPDEj1zevJCwRt9KbYEXywYiAHE7LPu0pQ1pFrf6AwrBZiiqWe4a4vQDF46XnSos4nxSq0acxvwuczCUiTxfHXXgyCcVv_0OOy89Dw=w1056-h816-no?authuser=0" alt="..." />
+                <img class="img-fluid"
+                  src="/images/certificates/C01-Create a Quick Clean and Cheap Website with Bootstrap Templates.jpg"
+                  alt="..." />
                 </div>
             </div>
         
             <!-- Certification Item 2-->
             <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background: blue;">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#certModal2">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" ">
                     <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                     </div>
-                    <img class="img-fluid" src="https://lh3.googleusercontent.com/7ZdFpFwBRE9x4IhLPo6yvlz8lSZWlxouIGdhc4emju9PAyuxQz4ctDH1sCq4wzmVN53iSYymQUxM6LOvzgxJO8eUWqXQ4UliPcYHlgyrQ7VZv4X_WvtsZ8_Kwj6ssi3Rn9VZQuokLo2n-TEMbMTZY_oF3m5p95h2iBPkjatUBtiX9cbmbpd-lreRRADkp1woNqqAxL-34LySd7OqYqexaZc1zzNvcb4moTBKt0XNMwZe6YO-qRLKJgFajuRwnpjtbUYI4z70YIRzWfssGo_R33eAaDzJmdMMxDpNtM_b2_Ikbu2yXCHLpTl4aXc8GgF6z6OgvveERdmec6oTlXWBupke1xiNQkC-vFeXnx9e07sUzdso2lMpGq44EkVB072l6eonk95FfBazN1DSkeRju9NxiZ60lQcsykj2IJ7MCWY4yrufSYnWfDaYZTUIg6oGjNgb4R1__PapH3c0UyAsYGENt6jB769Tn_Msdkg4TBFxf4ezmClTp14eIF5yDX9rUjcGqLy5_c93mm1cVa7cDuv21lbMZaAAfe92L591erUsv9NBhtf8CrBOhBeiKdwdKB2crPQK8al5odl1oq9fQRH4QISQPPVwsCJjoyzRkwiBtN2D7ZXNJxBNBQEX5oY_YoS5kQ00f-n-wGa00dUTBRWY0l2PVBjLKrjanl_dPimqcFmVjKfbs0umZFwiZEqZb8kcO4CrCCNj-dIj6jXrzWpOvFCGAnOE81dkoB6_kSPHIaVDruLSAndNdl9IpsDrJdp4n9MJ8IwDCUna-qPFVp4WiXFUJi6jXwpYviYt-LZNZqPhStTGP0PEXT0fLfaBNJb0O07oHdoKN245k50eeF5HlOH01269eDeEFQaVq53lzBoDII6sN8h9c0WTgKaIsTrxEsLLcEsSNN0yiCoPDEj1zevJCwRt9KbYEXywYiAHE7LPu0pQ1pFrf6AwrBZiiqWe4a4vQDF46XnSos4nxSq0acxvwuczCUiTxfHXXgyCcVv_0OOy89Dw=w1056-h816-no?authuser=0" alt="..." />
+                    <img class="img-fluid" 
+                    src="/images/certificates/C02-HTML and CSS Creating Navigation Bars.jpg"
+                    alt="..." />
                 </div>
             </div>
             
-            <!-- Certification Item 2-->
+            <!-- Certification Item 3-->
             <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background: blue;">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#certModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" ">
                     <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                     </div>
-                    <img class="img-fluid" src="https://lh3.googleusercontent.com/7ZdFpFwBRE9x4IhLPo6yvlz8lSZWlxouIGdhc4emju9PAyuxQz4ctDH1sCq4wzmVN53iSYymQUxM6LOvzgxJO8eUWqXQ4UliPcYHlgyrQ7VZv4X_WvtsZ8_Kwj6ssi3Rn9VZQuokLo2n-TEMbMTZY_oF3m5p95h2iBPkjatUBtiX9cbmbpd-lreRRADkp1woNqqAxL-34LySd7OqYqexaZc1zzNvcb4moTBKt0XNMwZe6YO-qRLKJgFajuRwnpjtbUYI4z70YIRzWfssGo_R33eAaDzJmdMMxDpNtM_b2_Ikbu2yXCHLpTl4aXc8GgF6z6OgvveERdmec6oTlXWBupke1xiNQkC-vFeXnx9e07sUzdso2lMpGq44EkVB072l6eonk95FfBazN1DSkeRju9NxiZ60lQcsykj2IJ7MCWY4yrufSYnWfDaYZTUIg6oGjNgb4R1__PapH3c0UyAsYGENt6jB769Tn_Msdkg4TBFxf4ezmClTp14eIF5yDX9rUjcGqLy5_c93mm1cVa7cDuv21lbMZaAAfe92L591erUsv9NBhtf8CrBOhBeiKdwdKB2crPQK8al5odl1oq9fQRH4QISQPPVwsCJjoyzRkwiBtN2D7ZXNJxBNBQEX5oY_YoS5kQ00f-n-wGa00dUTBRWY0l2PVBjLKrjanl_dPimqcFmVjKfbs0umZFwiZEqZb8kcO4CrCCNj-dIj6jXrzWpOvFCGAnOE81dkoB6_kSPHIaVDruLSAndNdl9IpsDrJdp4n9MJ8IwDCUna-qPFVp4WiXFUJi6jXwpYviYt-LZNZqPhStTGP0PEXT0fLfaBNJb0O07oHdoKN245k50eeF5HlOH01269eDeEFQaVq53lzBoDII6sN8h9c0WTgKaIsTrxEsLLcEsSNN0yiCoPDEj1zevJCwRt9KbYEXywYiAHE7LPu0pQ1pFrf6AwrBZiiqWe4a4vQDF46XnSos4nxSq0acxvwuczCUiTxfHXXgyCcVv_0OOy89Dw=w1056-h816-no?authuser=0" alt="..." />
+                    <img class="img-fluid" 
+                    src="/images/certificates/C03-HTML and CSS Linking.jpg"
+                    alt="..." />
                 </div>
             </div>
-            <!-- Certification Item 2-->
+            <!-- Certification Item 4-->
             <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background: blue;">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#certModal4">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" ">
                     <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                     </div>
-                    <img class="img-fluid" src="https://lh3.googleusercontent.com/7ZdFpFwBRE9x4IhLPo6yvlz8lSZWlxouIGdhc4emju9PAyuxQz4ctDH1sCq4wzmVN53iSYymQUxM6LOvzgxJO8eUWqXQ4UliPcYHlgyrQ7VZv4X_WvtsZ8_Kwj6ssi3Rn9VZQuokLo2n-TEMbMTZY_oF3m5p95h2iBPkjatUBtiX9cbmbpd-lreRRADkp1woNqqAxL-34LySd7OqYqexaZc1zzNvcb4moTBKt0XNMwZe6YO-qRLKJgFajuRwnpjtbUYI4z70YIRzWfssGo_R33eAaDzJmdMMxDpNtM_b2_Ikbu2yXCHLpTl4aXc8GgF6z6OgvveERdmec6oTlXWBupke1xiNQkC-vFeXnx9e07sUzdso2lMpGq44EkVB072l6eonk95FfBazN1DSkeRju9NxiZ60lQcsykj2IJ7MCWY4yrufSYnWfDaYZTUIg6oGjNgb4R1__PapH3c0UyAsYGENt6jB769Tn_Msdkg4TBFxf4ezmClTp14eIF5yDX9rUjcGqLy5_c93mm1cVa7cDuv21lbMZaAAfe92L591erUsv9NBhtf8CrBOhBeiKdwdKB2crPQK8al5odl1oq9fQRH4QISQPPVwsCJjoyzRkwiBtN2D7ZXNJxBNBQEX5oY_YoS5kQ00f-n-wGa00dUTBRWY0l2PVBjLKrjanl_dPimqcFmVjKfbs0umZFwiZEqZb8kcO4CrCCNj-dIj6jXrzWpOvFCGAnOE81dkoB6_kSPHIaVDruLSAndNdl9IpsDrJdp4n9MJ8IwDCUna-qPFVp4WiXFUJi6jXwpYviYt-LZNZqPhStTGP0PEXT0fLfaBNJb0O07oHdoKN245k50eeF5HlOH01269eDeEFQaVq53lzBoDII6sN8h9c0WTgKaIsTrxEsLLcEsSNN0yiCoPDEj1zevJCwRt9KbYEXywYiAHE7LPu0pQ1pFrf6AwrBZiiqWe4a4vQDF46XnSos4nxSq0acxvwuczCUiTxfHXXgyCcVv_0OOy89Dw=w1056-h816-no?authuser=0" alt="..." />
-                </div>
-            </div>
-            
-            <!-- Certification Item 2-->
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background: blue;">
-                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="https://lh3.googleusercontent.com/7ZdFpFwBRE9x4IhLPo6yvlz8lSZWlxouIGdhc4emju9PAyuxQz4ctDH1sCq4wzmVN53iSYymQUxM6LOvzgxJO8eUWqXQ4UliPcYHlgyrQ7VZv4X_WvtsZ8_Kwj6ssi3Rn9VZQuokLo2n-TEMbMTZY_oF3m5p95h2iBPkjatUBtiX9cbmbpd-lreRRADkp1woNqqAxL-34LySd7OqYqexaZc1zzNvcb4moTBKt0XNMwZe6YO-qRLKJgFajuRwnpjtbUYI4z70YIRzWfssGo_R33eAaDzJmdMMxDpNtM_b2_Ikbu2yXCHLpTl4aXc8GgF6z6OgvveERdmec6oTlXWBupke1xiNQkC-vFeXnx9e07sUzdso2lMpGq44EkVB072l6eonk95FfBazN1DSkeRju9NxiZ60lQcsykj2IJ7MCWY4yrufSYnWfDaYZTUIg6oGjNgb4R1__PapH3c0UyAsYGENt6jB769Tn_Msdkg4TBFxf4ezmClTp14eIF5yDX9rUjcGqLy5_c93mm1cVa7cDuv21lbMZaAAfe92L591erUsv9NBhtf8CrBOhBeiKdwdKB2crPQK8al5odl1oq9fQRH4QISQPPVwsCJjoyzRkwiBtN2D7ZXNJxBNBQEX5oY_YoS5kQ00f-n-wGa00dUTBRWY0l2PVBjLKrjanl_dPimqcFmVjKfbs0umZFwiZEqZb8kcO4CrCCNj-dIj6jXrzWpOvFCGAnOE81dkoB6_kSPHIaVDruLSAndNdl9IpsDrJdp4n9MJ8IwDCUna-qPFVp4WiXFUJi6jXwpYviYt-LZNZqPhStTGP0PEXT0fLfaBNJb0O07oHdoKN245k50eeF5HlOH01269eDeEFQaVq53lzBoDII6sN8h9c0WTgKaIsTrxEsLLcEsSNN0yiCoPDEj1zevJCwRt9KbYEXywYiAHE7LPu0pQ1pFrf6AwrBZiiqWe4a4vQDF46XnSos4nxSq0acxvwuczCUiTxfHXXgyCcVv_0OOy89Dw=w1056-h816-no?authuser=0" alt="..." />
+                    <img class="img-fluid"
+                    src="/images/certificates/C04-HTML for Educators.jpg"
+                    alt="..." />
                 </div>
             </div>
             
-            <!-- Certification Item 2-->
+            <!-- Certification Item 5-->
             <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background: blue;">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#certModal5">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" ">
                     <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                     </div>
-                    <img class="img-fluid" src="https://lh3.googleusercontent.com/7ZdFpFwBRE9x4IhLPo6yvlz8lSZWlxouIGdhc4emju9PAyuxQz4ctDH1sCq4wzmVN53iSYymQUxM6LOvzgxJO8eUWqXQ4UliPcYHlgyrQ7VZv4X_WvtsZ8_Kwj6ssi3Rn9VZQuokLo2n-TEMbMTZY_oF3m5p95h2iBPkjatUBtiX9cbmbpd-lreRRADkp1woNqqAxL-34LySd7OqYqexaZc1zzNvcb4moTBKt0XNMwZe6YO-qRLKJgFajuRwnpjtbUYI4z70YIRzWfssGo_R33eAaDzJmdMMxDpNtM_b2_Ikbu2yXCHLpTl4aXc8GgF6z6OgvveERdmec6oTlXWBupke1xiNQkC-vFeXnx9e07sUzdso2lMpGq44EkVB072l6eonk95FfBazN1DSkeRju9NxiZ60lQcsykj2IJ7MCWY4yrufSYnWfDaYZTUIg6oGjNgb4R1__PapH3c0UyAsYGENt6jB769Tn_Msdkg4TBFxf4ezmClTp14eIF5yDX9rUjcGqLy5_c93mm1cVa7cDuv21lbMZaAAfe92L591erUsv9NBhtf8CrBOhBeiKdwdKB2crPQK8al5odl1oq9fQRH4QISQPPVwsCJjoyzRkwiBtN2D7ZXNJxBNBQEX5oY_YoS5kQ00f-n-wGa00dUTBRWY0l2PVBjLKrjanl_dPimqcFmVjKfbs0umZFwiZEqZb8kcO4CrCCNj-dIj6jXrzWpOvFCGAnOE81dkoB6_kSPHIaVDruLSAndNdl9IpsDrJdp4n9MJ8IwDCUna-qPFVp4WiXFUJi6jXwpYviYt-LZNZqPhStTGP0PEXT0fLfaBNJb0O07oHdoKN245k50eeF5HlOH01269eDeEFQaVq53lzBoDII6sN8h9c0WTgKaIsTrxEsLLcEsSNN0yiCoPDEj1zevJCwRt9KbYEXywYiAHE7LPu0pQ1pFrf6AwrBZiiqWe4a4vQDF46XnSos4nxSq0acxvwuczCUiTxfHXXgyCcVv_0OOy89Dw=w1056-h816-no?authuser=0" alt="..." />
+                    <img class="img-fluid"
+                    src="/images/certificates/C06-Benefits of Bootstrap.jpg"
+                    alt="..." />
                 </div>
             </div>
+            
+            <!-- Certification Item 6-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#certModal6">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" ">
+                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" 
+                    src="/images/certificates/C06-Benefits of Bootstrap.jpg"
+                    alt="..." />
+                </div>
+            </div>
+
+            <!-- Certification Item 7-->
+            <div class="col-md-6 col-lg-4 mb-5">
+            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#certModal7">
+                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" ">
+                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                </div>
+                <img class="img-fluid" 
+                src="/images/certificates/C07-Getting Started with Python.jpg"
+                alt="..." />
+            </div>
+        </div>
+        
             
 
         </div>
       </div>
       
-      <!-- Portfolio Modals-->
-      <!-- Portfolio Modal 1-->
-      <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-            <div class="modal-body text-center pb-5">
-              <div class="container">
-                <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                    <!-- Portfolio Modal - Title-->
-                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
-                    <!-- Icon Divider-->
-                    <div class="divider-custom">
-                      <div class="divider-custom-line"></div>
-                      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                      <div class="divider-custom-line"></div>
+        <!-- Certifications Modals-->
+        <!-- Certification Modal -1-->
+        <div class="cert-modal modal fade" id="certModal1" tabindex="-1" aria-labelledby="certModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                    <div class="col-8">
+                        <!-- Certification Modal - Title-->
+                        <h2 class="cert-modal-title text-secondary text-uppercase mb-0">Website with Bootstrap Templates</h2>
+                        <!-- Icon Divider-->
+                        <div class="divider-custom">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                        <div class="divider-custom-line"></div>
+                        </div>
+                        <!-- Certification Modal - Image-->
+                        <img class="img-fluid rounded mb-5 w-100"
+                         src="/images/certificates/C01-Create a Quick Clean and Cheap Website with Bootstrap Templates.jpg"
+                         alt="..." />
+                        <!-- Certification Modal - Text-->
+                        <p class="mb-4 display-2 fw-bolder text-decoration-none">
+                            <a class="text-decoration-none" href="https://www.linkedin.com/learning/certificates/7b11e1401f7c37902b47c243568960b593ef72ee996894d6043ceeac76d482cf" target="_blank">View Online</a>
+                        </p>
+                        <button class="btn btn-primary" data-bs-dismiss="modal">
+                        <i class="fas fa-xmark fa-fw"></i>
+                        Close Window
+                        </button>
                     </div>
-                    <!-- Portfolio Modal - Image-->
-                    <img class="img-fluid rounded mb-5" src="https://lh3.googleusercontent.com/7ZdFpFwBRE9x4IhLPo6yvlz8lSZWlxouIGdhc4emju9PAyuxQz4ctDH1sCq4wzmVN53iSYymQUxM6LOvzgxJO8eUWqXQ4UliPcYHlgyrQ7VZv4X_WvtsZ8_Kwj6ssi3Rn9VZQuokLo2n-TEMbMTZY_oF3m5p95h2iBPkjatUBtiX9cbmbpd-lreRRADkp1woNqqAxL-34LySd7OqYqexaZc1zzNvcb4moTBKt0XNMwZe6YO-qRLKJgFajuRwnpjtbUYI4z70YIRzWfssGo_R33eAaDzJmdMMxDpNtM_b2_Ikbu2yXCHLpTl4aXc8GgF6z6OgvveERdmec6oTlXWBupke1xiNQkC-vFeXnx9e07sUzdso2lMpGq44EkVB072l6eonk95FfBazN1DSkeRju9NxiZ60lQcsykj2IJ7MCWY4yrufSYnWfDaYZTUIg6oGjNgb4R1__PapH3c0UyAsYGENt6jB769Tn_Msdkg4TBFxf4ezmClTp14eIF5yDX9rUjcGqLy5_c93mm1cVa7cDuv21lbMZaAAfe92L591erUsv9NBhtf8CrBOhBeiKdwdKB2crPQK8al5odl1oq9fQRH4QISQPPVwsCJjoyzRkwiBtN2D7ZXNJxBNBQEX5oY_YoS5kQ00f-n-wGa00dUTBRWY0l2PVBjLKrjanl_dPimqcFmVjKfbs0umZFwiZEqZb8kcO4CrCCNj-dIj6jXrzWpOvFCGAnOE81dkoB6_kSPHIaVDruLSAndNdl9IpsDrJdp4n9MJ8IwDCUna-qPFVp4WiXFUJi6jXwpYviYt-LZNZqPhStTGP0PEXT0fLfaBNJb0O07oHdoKN245k50eeF5HlOH01269eDeEFQaVq53lzBoDII6sN8h9c0WTgKaIsTrxEsLLcEsSNN0yiCoPDEj1zevJCwRt9KbYEXywYiAHE7LPu0pQ1pFrf6AwrBZiiqWe4a4vQDF46XnSos4nxSq0acxvwuczCUiTxfHXXgyCcVv_0OOy89Dw=w1056-h816-no?authuser=0" alt="..." />
-                    <!-- Portfolio Modal - Text-->
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                      <i class="fas fa-xmark fa-fw"></i>
-                      Close Window
-                    </button>
-                  </div>
+                    </div>
                 </div>
-              </div>
+                </div>
             </div>
-          </div>
+            </div>
         </div>
-      </div>
+
+        <!-- Certification Modal -2-->
+        <div class="cert-modal modal fade" id="certModal1" tabindex="-1" aria-labelledby="certModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <!-- Certification Modal - Title-->
+                        <h2 class="cert-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                        <!-- Icon Divider-->
+                        <div class="divider-custom">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                        <div class="divider-custom-line"></div>
+                        </div>
+                        <!-- Certification Modal - Image-->
+                        <img class="img-fluid rounded mb-5"
+                        src="##"
+                         alt="..." />
+                        <!-- Certification Modal - Text-->
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                        <button class="btn btn-primary" data-bs-dismiss="modal">
+                        <i class="fas fa-xmark fa-fw"></i>
+                        Close Window
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+          <!-- Certification Modal -3-->
+          <div class="cert-modal modal fade" id="certModal1" tabindex="-1" aria-labelledby="certModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <!-- Certification Modal - Title-->
+                        <h2 class="cert-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                        <!-- Icon Divider-->
+                        <div class="divider-custom">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                        <div class="divider-custom-line"></div>
+                        </div>
+                        <!-- Certification Modal - Image-->
+                        <img class="img-fluid rounded mb-5"
+                         src="##"
+                         alt="..." />
+                        <!-- Certification Modal - Text-->
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                        <button class="btn btn-primary" data-bs-dismiss="modal">
+                        <i class="fas fa-xmark fa-fw"></i>
+                        Close Window
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+          <!-- Certification Modal -4-->
+          <div class="cert-modal modal fade" id="certModal1" tabindex="-1" aria-labelledby="certModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <!-- Certification Modal - Title-->
+                        <h2 class="cert-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                        <!-- Icon Divider-->
+                        <div class="divider-custom">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                        <div class="divider-custom-line"></div>
+                        </div>
+                        <!-- Certification Modal - Image-->
+                        <img class="img-fluid rounded mb-5"
+                        src="##"
+                         alt="..." />
+                        <!-- Certification Modal - Text-->
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                        <button class="btn btn-primary" data-bs-dismiss="modal">
+                        <i class="fas fa-xmark fa-fw"></i>
+                        Close Window
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+          <!-- Certification Modal -5-->
+          <div class="cert-modal modal fade" id="certModal1" tabindex="-1" aria-labelledby="certModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <!-- Certification Modal - Title-->
+                        <h2 class="cert-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                        <!-- Icon Divider-->
+                        <div class="divider-custom">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                        <div class="divider-custom-line"></div>
+                        </div>
+                        <!-- Certification Modal - Image-->
+                        <img class="img-fluid rounded mb-5"
+                         src="##"
+                         alt="..." />
+                       <!-- Certification Modal - Text-->
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                        <button class="btn btn-primary" data-bs-dismiss="modal">
+                        <i class="fas fa-xmark fa-fw"></i>
+                        Close Window
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+          <!-- Certification Modal -6-->
+          <div class="cert-modal modal fade" id="certModal1" tabindex="-1" aria-labelledby="certModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <!-- Certification Modal - Title-->
+                        <h2 class="cert-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                        <!-- Icon Divider-->
+                        <div class="divider-custom">
+                        <div class="divider-custom-line"></div>
+                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                        <div class="divider-custom-line"></div>
+                        </div>
+                        <!-- Certification Modal - Image-->
+                        <img class="img-fluid rounded mb-5" 
+                         src="##"
+                         alt="..." />
+                        <!-- Certification Modal - Text-->
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                        <button class="btn btn-primary" data-bs-dismiss="modal">
+                        <i class="fas fa-xmark fa-fw"></i>
+                        Close Window
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+
+
   </section>
 
 
   </main>
 
-  <footer>
     <!-- Footer-->
-<footer class="footer text-center">
-    <div class="container">
+<footer class="footer text-center ">
+    <div class="container ">
       <div class="row">
         <!-- Footer Location-->
         <div class="col-lg-4 mb-5 mb-lg-0">
           <h4 class="text-uppercase mb-4">Location</h4>
           <p class="lead mb-0">
-            2215 John Daniel Drive
+            98 Stockbridge St,
             <br />
-            Clark, MO 65243
+            Hadley, MA 01035
           </p>
         </div>
         <!-- Footer Social Icons-->
         <div class="col-lg-4 mb-5 mb-lg-0">
           <h4 class="text-uppercase mb-4">Around the Web</h4>
-          <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-          <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-          <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/harris.junaid"><i class="fab fa-fw fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/harrisjunaid22"><i class="fab fa-fw fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/harris-junaid-88752714"><i class="fab fa-fw fa-linkedin-in"></i></a>
           <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
         </div>
-        <!-- Footer About Text-->
+        <!-- Footer Contact Text-->
         <div class="col-lg-4">
-          <h4 class="text-uppercase mb-4">About Freelancer</h4>
-          <p class="lead mb-0">
-            Freelance is a free to use, MIT licensed Bootstrap theme created by
-            <a href="http://startbootstrap.com">Start Bootstrap</a>
-            .
-          </p>
+          <h4 class="text-uppercase mb-4">Contact</h4>
+         
+            <ul>
+                <li><a href="mailto:harris.junaid@gmail.com">Send email</a></li>
+                <li><a href="tel:4133151987">Call: 413-315-1987</a></li>
+            </ul>
+       
         </div>
       </div>
     </div>
   </footer>
   <!-- Copyright Section-->
   <div class="copyright py-4 text-center text-white">
-    <div class="container"><small>Copyright &copy; Your Website 2022</small></div>
+    <div class="container"><small>Copyright &copy; Harris Junaid 2023</small></div>
   </div>
-
-  </footer>
+ 
   <!-- Bootstrap-->
   <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" 
