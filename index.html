@@ -80,11 +80,19 @@
   div.card div.card-body {
   margin-bottom: 15px;  /*space between*/  
     min-height: 50vh;
-  background-image: url('https://pixelprowess.com/i/mug-rex.jpg');
   background-repeat: no-repeat;
   background-size: cover; /*cover the entire background*/
   /*   background-blend-mode: screen, normal; */
   }
+  div.PacMen div.card-body {
+  background-image: url('/images/projects/Bouncing\ PacMen.png');
+  }
+  div.Eye-Movement {
+    background-image: url('/images/projects/Following-Eyes.png');
+
+  }
+
+/* PacMen Eye-Movement */
 
 div.card-body .card-text {
   margin-top: 15px; /*gap from card-title */
@@ -320,7 +328,7 @@ a.card-link {
         <div class="col accordion" id="curriculum-vitae">
           <div class="accordion-item">
             <h2 id="regularHeadingFirst" class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#regularCollapseFirst" aria-expanded="true" aria-controls="regularCollapseFirst">
+              <button class="accordion-button bg-dark text-white fw-bold fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#regularCollapseFirst" aria-expanded="true" aria-controls="regularCollapseFirst">
                 Curriculum Vitae
               </button>
             </h2>
@@ -346,9 +354,9 @@ a.card-link {
     
   <!-- Bouncing-PacMen -->
   <!-- =============== -->   
-  <div class="col bg-warning">
+  <div class="PacMen col bg-warning">
     <div class="card h-100" >
-      <img class="card-img-top" src="https://pixelprowess.com/i/mug-rex.jpg" alt="PacMen project image">
+      <img class="card-img-top" src="/images/projects/Bouncing PacMen.png" alt="PacMen project image">
       <div class="card-body">
         <h4 class="card-title text-secondary">Bouncing-PacMen</h4>
         <p class="card-text lh-sm   overflow-auto">This game logic is based on the addition of an image to the DOM and the recording of its x and y coordinates and x and y velocities. Scale for velocity ranges from 0 to 10 while scale for velocity ranges from 0 to 200. The callback makePac() returns an object with velocity and position, as well as an image tag pointer. It is pushed into the pacMen array using the pacMen.push method. The 'Timeout' calling function, update(), calls itself. The 'position' and'velocity' attributes in the shadow DOM. This then updates it in the actual DOM. The 'checkCollisions' method detects collisions by computing element velocity and width in advance.</p>
@@ -361,9 +369,9 @@ a.card-link {
   
   <!-- Eye-Movement -->
   <!-- =============== -->   
-  <div class="col bg-warning">
+  <div class="Eye-Movement col bg-warning">
     <div class="card h-100" >
-      <img class="card-img-top" src="https://pixelprowess.com/i/mug-rex.jpg" alt="Eye Movement project image">
+      <img class="card-img-top" src="/images/projects/Following-Eyes.png" alt="Eye Movement project image">
       <div class="card-body">
         <h4 class="card-title text-secondary">Eye-Movement</h4>
         <p class="card-text lh-sm   overflow-auto">This exercise employs animation techniques programmatically and dynamically. When index.html is executed, a pair of eyes will follow the mouse pointer.</p>
