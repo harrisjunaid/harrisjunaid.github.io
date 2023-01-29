@@ -9,6 +9,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
   
+  <script src="https://kit.fontawesome.com/200bc5a26d.js" crossorigin="anonymous"></script>
+
   <!-- Core themes CSS-->
   <link rel="stylesheet" src="/css/navbar.css">
   <link rel="stylesheet" src="/css/about.css">
@@ -150,7 +152,7 @@ a.card-link {
 }
 .portfolio-item .portfolio-item-caption {
   border: 4px solid red;
-  opacity: 1;
+  /* opacity: 0; */
   position: absolute;
   top: 0;
   left: 0;
@@ -182,6 +184,20 @@ a.card-link {
   }
 }
 
+</style>
+
+<!--footer.css-->
+<style>
+    .footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.copyright {
+  background-color: #1a252f;
+}
 </style>
 
 <body id="page-top" class="position-relative" data-bs-spy="scroll">
@@ -326,16 +342,66 @@ a.card-link {
   <section class="certificatoins">
     <div style="positon: relative;">
         <div class="row justify-content-center bg-warning">
-          <!-- Portfolio Item 1-->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-              <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background: blue;">
-                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-              </div>
-              <img class="img-fluid" src="https://lh3.googleusercontent.com/7ZdFpFwBRE9x4IhLPo6yvlz8lSZWlxouIGdhc4emju9PAyuxQz4ctDH1sCq4wzmVN53iSYymQUxM6LOvzgxJO8eUWqXQ4UliPcYHlgyrQ7VZv4X_WvtsZ8_Kwj6ssi3Rn9VZQuokLo2n-TEMbMTZY_oF3m5p95h2iBPkjatUBtiX9cbmbpd-lreRRADkp1woNqqAxL-34LySd7OqYqexaZc1zzNvcb4moTBKt0XNMwZe6YO-qRLKJgFajuRwnpjtbUYI4z70YIRzWfssGo_R33eAaDzJmdMMxDpNtM_b2_Ikbu2yXCHLpTl4aXc8GgF6z6OgvveERdmec6oTlXWBupke1xiNQkC-vFeXnx9e07sUzdso2lMpGq44EkVB072l6eonk95FfBazN1DSkeRju9NxiZ60lQcsykj2IJ7MCWY4yrufSYnWfDaYZTUIg6oGjNgb4R1__PapH3c0UyAsYGENt6jB769Tn_Msdkg4TBFxf4ezmClTp14eIF5yDX9rUjcGqLy5_c93mm1cVa7cDuv21lbMZaAAfe92L591erUsv9NBhtf8CrBOhBeiKdwdKB2crPQK8al5odl1oq9fQRH4QISQPPVwsCJjoyzRkwiBtN2D7ZXNJxBNBQEX5oY_YoS5kQ00f-n-wGa00dUTBRWY0l2PVBjLKrjanl_dPimqcFmVjKfbs0umZFwiZEqZb8kcO4CrCCNj-dIj6jXrzWpOvFCGAnOE81dkoB6_kSPHIaVDruLSAndNdl9IpsDrJdp4n9MJ8IwDCUna-qPFVp4WiXFUJi6jXwpYviYt-LZNZqPhStTGP0PEXT0fLfaBNJb0O07oHdoKN245k50eeF5HlOH01269eDeEFQaVq53lzBoDII6sN8h9c0WTgKaIsTrxEsLLcEsSNN0yiCoPDEj1zevJCwRt9KbYEXywYiAHE7LPu0pQ1pFrf6AwrBZiiqWe4a4vQDF46XnSos4nxSq0acxvwuczCUiTxfHXXgyCcVv_0OOy89Dw=w1056-h816-no?authuser=0" alt="..." />
+            <!-- Certification Item 1-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background: blue;">
+                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                </div>
+                <img class="img-fluid" src="https://lh3.googleusercontent.com/7ZdFpFwBRE9x4IhLPo6yvlz8lSZWlxouIGdhc4emju9PAyuxQz4ctDH1sCq4wzmVN53iSYymQUxM6LOvzgxJO8eUWqXQ4UliPcYHlgyrQ7VZv4X_WvtsZ8_Kwj6ssi3Rn9VZQuokLo2n-TEMbMTZY_oF3m5p95h2iBPkjatUBtiX9cbmbpd-lreRRADkp1woNqqAxL-34LySd7OqYqexaZc1zzNvcb4moTBKt0XNMwZe6YO-qRLKJgFajuRwnpjtbUYI4z70YIRzWfssGo_R33eAaDzJmdMMxDpNtM_b2_Ikbu2yXCHLpTl4aXc8GgF6z6OgvveERdmec6oTlXWBupke1xiNQkC-vFeXnx9e07sUzdso2lMpGq44EkVB072l6eonk95FfBazN1DSkeRju9NxiZ60lQcsykj2IJ7MCWY4yrufSYnWfDaYZTUIg6oGjNgb4R1__PapH3c0UyAsYGENt6jB769Tn_Msdkg4TBFxf4ezmClTp14eIF5yDX9rUjcGqLy5_c93mm1cVa7cDuv21lbMZaAAfe92L591erUsv9NBhtf8CrBOhBeiKdwdKB2crPQK8al5odl1oq9fQRH4QISQPPVwsCJjoyzRkwiBtN2D7ZXNJxBNBQEX5oY_YoS5kQ00f-n-wGa00dUTBRWY0l2PVBjLKrjanl_dPimqcFmVjKfbs0umZFwiZEqZb8kcO4CrCCNj-dIj6jXrzWpOvFCGAnOE81dkoB6_kSPHIaVDruLSAndNdl9IpsDrJdp4n9MJ8IwDCUna-qPFVp4WiXFUJi6jXwpYviYt-LZNZqPhStTGP0PEXT0fLfaBNJb0O07oHdoKN245k50eeF5HlOH01269eDeEFQaVq53lzBoDII6sN8h9c0WTgKaIsTrxEsLLcEsSNN0yiCoPDEj1zevJCwRt9KbYEXywYiAHE7LPu0pQ1pFrf6AwrBZiiqWe4a4vQDF46XnSos4nxSq0acxvwuczCUiTxfHXXgyCcVv_0OOy89Dw=w1056-h816-no?authuser=0" alt="..." />
+                </div>
             </div>
-          </div>
-      
+        
+            <!-- Certification Item 2-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background: blue;">
+                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="https://lh3.googleusercontent.com/7ZdFpFwBRE9x4IhLPo6yvlz8lSZWlxouIGdhc4emju9PAyuxQz4ctDH1sCq4wzmVN53iSYymQUxM6LOvzgxJO8eUWqXQ4UliPcYHlgyrQ7VZv4X_WvtsZ8_Kwj6ssi3Rn9VZQuokLo2n-TEMbMTZY_oF3m5p95h2iBPkjatUBtiX9cbmbpd-lreRRADkp1woNqqAxL-34LySd7OqYqexaZc1zzNvcb4moTBKt0XNMwZe6YO-qRLKJgFajuRwnpjtbUYI4z70YIRzWfssGo_R33eAaDzJmdMMxDpNtM_b2_Ikbu2yXCHLpTl4aXc8GgF6z6OgvveERdmec6oTlXWBupke1xiNQkC-vFeXnx9e07sUzdso2lMpGq44EkVB072l6eonk95FfBazN1DSkeRju9NxiZ60lQcsykj2IJ7MCWY4yrufSYnWfDaYZTUIg6oGjNgb4R1__PapH3c0UyAsYGENt6jB769Tn_Msdkg4TBFxf4ezmClTp14eIF5yDX9rUjcGqLy5_c93mm1cVa7cDuv21lbMZaAAfe92L591erUsv9NBhtf8CrBOhBeiKdwdKB2crPQK8al5odl1oq9fQRH4QISQPPVwsCJjoyzRkwiBtN2D7ZXNJxBNBQEX5oY_YoS5kQ00f-n-wGa00dUTBRWY0l2PVBjLKrjanl_dPimqcFmVjKfbs0umZFwiZEqZb8kcO4CrCCNj-dIj6jXrzWpOvFCGAnOE81dkoB6_kSPHIaVDruLSAndNdl9IpsDrJdp4n9MJ8IwDCUna-qPFVp4WiXFUJi6jXwpYviYt-LZNZqPhStTGP0PEXT0fLfaBNJb0O07oHdoKN245k50eeF5HlOH01269eDeEFQaVq53lzBoDII6sN8h9c0WTgKaIsTrxEsLLcEsSNN0yiCoPDEj1zevJCwRt9KbYEXywYiAHE7LPu0pQ1pFrf6AwrBZiiqWe4a4vQDF46XnSos4nxSq0acxvwuczCUiTxfHXXgyCcVv_0OOy89Dw=w1056-h816-no?authuser=0" alt="..." />
+                </div>
+            </div>
+            
+            <!-- Certification Item 2-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background: blue;">
+                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="https://lh3.googleusercontent.com/7ZdFpFwBRE9x4IhLPo6yvlz8lSZWlxouIGdhc4emju9PAyuxQz4ctDH1sCq4wzmVN53iSYymQUxM6LOvzgxJO8eUWqXQ4UliPcYHlgyrQ7VZv4X_WvtsZ8_Kwj6ssi3Rn9VZQuokLo2n-TEMbMTZY_oF3m5p95h2iBPkjatUBtiX9cbmbpd-lreRRADkp1woNqqAxL-34LySd7OqYqexaZc1zzNvcb4moTBKt0XNMwZe6YO-qRLKJgFajuRwnpjtbUYI4z70YIRzWfssGo_R33eAaDzJmdMMxDpNtM_b2_Ikbu2yXCHLpTl4aXc8GgF6z6OgvveERdmec6oTlXWBupke1xiNQkC-vFeXnx9e07sUzdso2lMpGq44EkVB072l6eonk95FfBazN1DSkeRju9NxiZ60lQcsykj2IJ7MCWY4yrufSYnWfDaYZTUIg6oGjNgb4R1__PapH3c0UyAsYGENt6jB769Tn_Msdkg4TBFxf4ezmClTp14eIF5yDX9rUjcGqLy5_c93mm1cVa7cDuv21lbMZaAAfe92L591erUsv9NBhtf8CrBOhBeiKdwdKB2crPQK8al5odl1oq9fQRH4QISQPPVwsCJjoyzRkwiBtN2D7ZXNJxBNBQEX5oY_YoS5kQ00f-n-wGa00dUTBRWY0l2PVBjLKrjanl_dPimqcFmVjKfbs0umZFwiZEqZb8kcO4CrCCNj-dIj6jXrzWpOvFCGAnOE81dkoB6_kSPHIaVDruLSAndNdl9IpsDrJdp4n9MJ8IwDCUna-qPFVp4WiXFUJi6jXwpYviYt-LZNZqPhStTGP0PEXT0fLfaBNJb0O07oHdoKN245k50eeF5HlOH01269eDeEFQaVq53lzBoDII6sN8h9c0WTgKaIsTrxEsLLcEsSNN0yiCoPDEj1zevJCwRt9KbYEXywYiAHE7LPu0pQ1pFrf6AwrBZiiqWe4a4vQDF46XnSos4nxSq0acxvwuczCUiTxfHXXgyCcVv_0OOy89Dw=w1056-h816-no?authuser=0" alt="..." />
+                </div>
+            </div>
+            <!-- Certification Item 2-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background: blue;">
+                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="https://lh3.googleusercontent.com/7ZdFpFwBRE9x4IhLPo6yvlz8lSZWlxouIGdhc4emju9PAyuxQz4ctDH1sCq4wzmVN53iSYymQUxM6LOvzgxJO8eUWqXQ4UliPcYHlgyrQ7VZv4X_WvtsZ8_Kwj6ssi3Rn9VZQuokLo2n-TEMbMTZY_oF3m5p95h2iBPkjatUBtiX9cbmbpd-lreRRADkp1woNqqAxL-34LySd7OqYqexaZc1zzNvcb4moTBKt0XNMwZe6YO-qRLKJgFajuRwnpjtbUYI4z70YIRzWfssGo_R33eAaDzJmdMMxDpNtM_b2_Ikbu2yXCHLpTl4aXc8GgF6z6OgvveERdmec6oTlXWBupke1xiNQkC-vFeXnx9e07sUzdso2lMpGq44EkVB072l6eonk95FfBazN1DSkeRju9NxiZ60lQcsykj2IJ7MCWY4yrufSYnWfDaYZTUIg6oGjNgb4R1__PapH3c0UyAsYGENt6jB769Tn_Msdkg4TBFxf4ezmClTp14eIF5yDX9rUjcGqLy5_c93mm1cVa7cDuv21lbMZaAAfe92L591erUsv9NBhtf8CrBOhBeiKdwdKB2crPQK8al5odl1oq9fQRH4QISQPPVwsCJjoyzRkwiBtN2D7ZXNJxBNBQEX5oY_YoS5kQ00f-n-wGa00dUTBRWY0l2PVBjLKrjanl_dPimqcFmVjKfbs0umZFwiZEqZb8kcO4CrCCNj-dIj6jXrzWpOvFCGAnOE81dkoB6_kSPHIaVDruLSAndNdl9IpsDrJdp4n9MJ8IwDCUna-qPFVp4WiXFUJi6jXwpYviYt-LZNZqPhStTGP0PEXT0fLfaBNJb0O07oHdoKN245k50eeF5HlOH01269eDeEFQaVq53lzBoDII6sN8h9c0WTgKaIsTrxEsLLcEsSNN0yiCoPDEj1zevJCwRt9KbYEXywYiAHE7LPu0pQ1pFrf6AwrBZiiqWe4a4vQDF46XnSos4nxSq0acxvwuczCUiTxfHXXgyCcVv_0OOy89Dw=w1056-h816-no?authuser=0" alt="..." />
+                </div>
+            </div>
+            
+            <!-- Certification Item 2-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background: blue;">
+                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="https://lh3.googleusercontent.com/7ZdFpFwBRE9x4IhLPo6yvlz8lSZWlxouIGdhc4emju9PAyuxQz4ctDH1sCq4wzmVN53iSYymQUxM6LOvzgxJO8eUWqXQ4UliPcYHlgyrQ7VZv4X_WvtsZ8_Kwj6ssi3Rn9VZQuokLo2n-TEMbMTZY_oF3m5p95h2iBPkjatUBtiX9cbmbpd-lreRRADkp1woNqqAxL-34LySd7OqYqexaZc1zzNvcb4moTBKt0XNMwZe6YO-qRLKJgFajuRwnpjtbUYI4z70YIRzWfssGo_R33eAaDzJmdMMxDpNtM_b2_Ikbu2yXCHLpTl4aXc8GgF6z6OgvveERdmec6oTlXWBupke1xiNQkC-vFeXnx9e07sUzdso2lMpGq44EkVB072l6eonk95FfBazN1DSkeRju9NxiZ60lQcsykj2IJ7MCWY4yrufSYnWfDaYZTUIg6oGjNgb4R1__PapH3c0UyAsYGENt6jB769Tn_Msdkg4TBFxf4ezmClTp14eIF5yDX9rUjcGqLy5_c93mm1cVa7cDuv21lbMZaAAfe92L591erUsv9NBhtf8CrBOhBeiKdwdKB2crPQK8al5odl1oq9fQRH4QISQPPVwsCJjoyzRkwiBtN2D7ZXNJxBNBQEX5oY_YoS5kQ00f-n-wGa00dUTBRWY0l2PVBjLKrjanl_dPimqcFmVjKfbs0umZFwiZEqZb8kcO4CrCCNj-dIj6jXrzWpOvFCGAnOE81dkoB6_kSPHIaVDruLSAndNdl9IpsDrJdp4n9MJ8IwDCUna-qPFVp4WiXFUJi6jXwpYviYt-LZNZqPhStTGP0PEXT0fLfaBNJb0O07oHdoKN245k50eeF5HlOH01269eDeEFQaVq53lzBoDII6sN8h9c0WTgKaIsTrxEsLLcEsSNN0yiCoPDEj1zevJCwRt9KbYEXywYiAHE7LPu0pQ1pFrf6AwrBZiiqWe4a4vQDF46XnSos4nxSq0acxvwuczCUiTxfHXXgyCcVv_0OOy89Dw=w1056-h816-no?authuser=0" alt="..." />
+                </div>
+            </div>
+            
+            <!-- Certification Item 2-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background: blue;">
+                    <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="https://lh3.googleusercontent.com/7ZdFpFwBRE9x4IhLPo6yvlz8lSZWlxouIGdhc4emju9PAyuxQz4ctDH1sCq4wzmVN53iSYymQUxM6LOvzgxJO8eUWqXQ4UliPcYHlgyrQ7VZv4X_WvtsZ8_Kwj6ssi3Rn9VZQuokLo2n-TEMbMTZY_oF3m5p95h2iBPkjatUBtiX9cbmbpd-lreRRADkp1woNqqAxL-34LySd7OqYqexaZc1zzNvcb4moTBKt0XNMwZe6YO-qRLKJgFajuRwnpjtbUYI4z70YIRzWfssGo_R33eAaDzJmdMMxDpNtM_b2_Ikbu2yXCHLpTl4aXc8GgF6z6OgvveERdmec6oTlXWBupke1xiNQkC-vFeXnx9e07sUzdso2lMpGq44EkVB072l6eonk95FfBazN1DSkeRju9NxiZ60lQcsykj2IJ7MCWY4yrufSYnWfDaYZTUIg6oGjNgb4R1__PapH3c0UyAsYGENt6jB769Tn_Msdkg4TBFxf4ezmClTp14eIF5yDX9rUjcGqLy5_c93mm1cVa7cDuv21lbMZaAAfe92L591erUsv9NBhtf8CrBOhBeiKdwdKB2crPQK8al5odl1oq9fQRH4QISQPPVwsCJjoyzRkwiBtN2D7ZXNJxBNBQEX5oY_YoS5kQ00f-n-wGa00dUTBRWY0l2PVBjLKrjanl_dPimqcFmVjKfbs0umZFwiZEqZb8kcO4CrCCNj-dIj6jXrzWpOvFCGAnOE81dkoB6_kSPHIaVDruLSAndNdl9IpsDrJdp4n9MJ8IwDCUna-qPFVp4WiXFUJi6jXwpYviYt-LZNZqPhStTGP0PEXT0fLfaBNJb0O07oHdoKN245k50eeF5HlOH01269eDeEFQaVq53lzBoDII6sN8h9c0WTgKaIsTrxEsLLcEsSNN0yiCoPDEj1zevJCwRt9KbYEXywYiAHE7LPu0pQ1pFrf6AwrBZiiqWe4a4vQDF46XnSos4nxSq0acxvwuczCUiTxfHXXgyCcVv_0OOy89Dw=w1056-h816-no?authuser=0" alt="..." />
+                </div>
+            </div>
+            
+
         </div>
       </div>
       
@@ -378,6 +444,43 @@ a.card-link {
   </main>
 
   <footer>
+    <!-- Footer-->
+<footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Location-->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <p class="lead mb-0">
+            2215 John Daniel Drive
+            <br />
+            Clark, MO 65243
+          </p>
+        </div>
+        <!-- Footer Social Icons-->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Around the Web</h4>
+          <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+          <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+        </div>
+        <!-- Footer About Text-->
+        <div class="col-lg-4">
+          <h4 class="text-uppercase mb-4">About Freelancer</h4>
+          <p class="lead mb-0">
+            Freelance is a free to use, MIT licensed Bootstrap theme created by
+            <a href="http://startbootstrap.com">Start Bootstrap</a>
+            .
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Copyright Section-->
+  <div class="copyright py-4 text-center text-white">
+    <div class="container"><small>Copyright &copy; Your Website 2022</small></div>
+  </div>
 
   </footer>
   <!-- Bootstrap-->
