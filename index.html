@@ -57,12 +57,15 @@
   }
   
   div.banner-intro {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-image: url("https://lh3.googleusercontent.com/n4dbYI6Tbhg9DMOcEH8-xadLeeCGj3NZ1SWvdsBuwckJeM9jRHEqJ6497DlYs7JvWmNBfy-ubkwQ9_ChApd9UhxHrP90fp06VAvO8qBmAkRrWPUdRxZvn0cj1HzJcY_f0uB3VBUnfVfs5DKrmvnnFqOz0yZ-pJ5WRO3u0pflrIxBYVku2k0El6mVYMq1pfCCOerb9eclFvl3Zihp_Zct2UdP4cBbzjzU_jmZl4RLDRXZ8_QCihGnB3Svn1NrXx032O_XXoC15cZ3UE0sfLm_2x9NF9Go560Zb5__Qiy2uWx5prC0gBZVI3Zxgeuod-X8kva7bXfgVe6eIJBUd-G5FoZmkaSBsELi0nDkAiG8nbi6WhMbcXUr8OBVINvlQSK4odEccE_-tbgZgygVMELc_C3XRvolkFkXYRpt6k2eydBp-D5HKQy8hUryjKVXu8W2t9_algwl1IfXDGFzvvpt7yKt9trNlRqhSkOwydcy8i-_-mlpwZuXLz85liveOrJuEjR4cUOgHa1-sIM0os6QNYcGXRoGBySA2kzHh7D_vPAKaquVql_NGhL9NWLEKrV15tsU-1P7CPEM20SzzDSOMkjHry1NQ28g6J3XUhOdrrvxuJsizuouX297ILPxe2v7TesrpqA35ka8rUm29kAR25nBw1TulkpItbRA7w0yEszLLUDjhEmWEgCZtNmJdqGIsDWJ2yeweBF-pMLaUdWkLjGIXOpeWZEQ6TKj3iQ_F5s2JpZ9o78sDg9gJ7JjGOf4HvFrUPOxx1l2ZpKdKteIjAA7fjLxuH_JRkCQbvlHkHb92GG7DUxRH2fQ53oMfR6qs6wZssW0KDA6-c41xPQMpUQIrSqrnrXHeg2M4bsa_iBKF5c-uVTW7N_-dPIO8PNMaX4AbKEq7ntcN8ldGEFQTmLci4rDDE_pMR5AWQZv3-dJMCjhTxE5Ohal9534xCprC3XjAmX02NvYdwh4MS8lUoZwdBZOjSsKTeVT7vttLQCU6olUhrvkv2C2=w2560-h1440-no?authuser=0") !important;
     background-repeat: no-repeat;
     background-size: cover; /*cover the entire background*/
     /*   background-blend-mode: screen, normal; */
+    overflow: scroll;
+    max-height: 70vh;
   }
+
   
 </style>
 
@@ -99,9 +102,9 @@ div.row {
   /* height: 50vh; */
 }
 
-div.col {
-  /* border: 2px solid blue; */
-  /* overflow: hidden; */
+section.portfolio div.col {
+  border: 2px solid blue;
+  overflow: hidden;
 }
 
 div.card {
@@ -151,14 +154,14 @@ a.card-link {
   overflow: hidden;
 }
 .portfolio-item .portfolio-item-caption {
-  border: 4px solid red;
+  /* border: 4px solid red; */
   /* opacity: 0; */
   position: absolute;
   top: 0;
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(26, 145, 188, 0.9);
 }
 .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
@@ -217,70 +220,92 @@ a.card-link {
     }
 
 
-    footer {
-        
+    footer a {
+        color: white;        
     }
+    footer ul {
+        list-style-type: none;
+            }
 </style>
 
-<body id="page-top" class="position-relative bg-warning" data-bs-spy="scroll">
+<style>
+    a.email::before {
+        font-family: "Font Awesome 5 Free"; font-weight: 900;        content: "\f0e0";
+    }
+    a.phone::before {
+        font-family: "Font Awesome 5 Free"; font-weight: 900;        content: "\f879";
+    }
+    p.display-2 a::after {
+        font-family: "Font Awesome 5 Free"; font-weight: 900;        content: "\f559";
+
+    }
+    div.divider {
+      border: 2px solid red;
+      background-color: hsl(210, 11%, 15%);
+      width: 20vw;
+      height: 2rem;
+    }
+
+</style>
+
+<body id="page-top" class="position-relative bg-warning" data-bs-spy="scroll" data-bs-target=".navbar">
 
   <!-- Navigation: navbar -->
   <!-- ================== -->
-  <header class="#">
+  <header class="order-sm-0">
   <section class="navigation text-uppercase">
     <!-- nav tag with navbar classs -->
     <!--               bg-{COL}   light/dark   navbar-expnad-{BR} -->
-    <nav class="navbar navbar-light navbar-expand-lg text-uppercase fixed-top" id="mainNav">
-      <div class="container position-sticky">
-        <!-- container: align the text inside the navbar to the Bootstrap grid -->
-        <!-- navbar-brand: branding text or an image -->
-        <a href="#" class="navbar-brand">
-          <img src="https://pixelprowess.com/i/binaryville-icon.png" width="45" width="45" alt="Icon">
-        </a>
-        <!-- hamburger menu: navbar-toggler navigation wrapper and displayed with navbar-toggler-icon -->
-        <!-- data-bs-toggle="collapse": button that's going to collapse things.-->
-        <!-- aria-controls="navbarResponsive": what to collapse -->
-        <!-- aria-expanded="false": initially section is going to be not expanded -->
-        <!-- aria-label="Toggle navigation": for assistive devices -->
-        <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <!-- wrapper for collapsable elements  -->
-        <!-- id to target it with a button -->
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <!--ul class="navbar-nav navbaar-nav-scroll ms-auto" style="--bs-scroll-height: 20;" > -->
-          <ul class="navbar-nav ms-auto">
-            <!-- nav-item: each navigation item -->
-            <!-- nav-link: where links go -->
-            <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn" href="#home">Home</a></li>
-            <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn" href="#about">About</a></li>
-            <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn" href="#portfolio">Portfolio</a></li>
-            <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn" href="#certifications">Certifications</a></li>
-            <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn" href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <form class="d-flex ms-3  d-none d-lg-inline">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">go</button>
-        </form>
-      </div>
-    </nav>
-  </section>
+     <!-- Navigation-->
+        <!-- nav tag with navbar classs -->
+        <!--               bg-{COL}   light/dark   navbar-expnad-{BR} -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+          <!-- container: align the text inside the navbar to the Bootstrap grid -->
+          <!-- navbar-brand: branding text or an image -->
+          <div class="container px-4">
+              <a class="navbar-brand" href="#page-top"><i class="fs-1 text-warning fa-solid fa-sun"></i>
+                    <!-- <img src="***" width="45" width="45" alt="Icon"> -->
+  
+              </a>
+              <!-- hamburger menu: navbar-toggler navigation wrapper and displayed with navbar-toggler-icon -->
+              <!-- data-bs-toggle="collapse": button that's going to collapse things.-->
+              <!-- aria-controls="navbarResponsive": what to collapse -->
+              <!-- aria-expanded="false": initially section is going to be not expanded -->
+              <!-- aria-label="Toggle navigation": for assistive devices -->
+          
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <!-- wrapper for collapsable elements  -->
+              <!-- id to target it with a button -->
+          
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ms-auto">
+                      <!-- nav-item: each navigation item -->
+                      <!-- nav-link: where links go -->
+              
+                      <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn btn-warning active fs-5 fw-bold" href="#about">About</a></li>
+                      <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn btn-warning  fs-5 fw-bold" href="#portfolio">Portfolio</a></li>
+                      <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn btn-warning  fs-5 fw-bold" href="#certifications">Certifications</a></li>
+                      <li class="nav-item mx-0 mx-lg-1"> <a class="nav-link py-3 px-0 px-lg-3 rounded btn btn-warning  fs-5 fw-bold" href="#contact">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+   </section>
   </header>
   
-
   <main>
   <!-- About Section -->
   <!-- ================== -->
-  <section class="banner">
+  <section class="banner" id="about">
     <div class="banner container">
   
       <div class="banner-intro row justify-content-sm-center overflow-hidden">
         <div class="col-xs-12 col-lg-5 overflow-hidden order-lg-2 py-5 px-2">
-          <div class="banner text d-grid gap-2 position-relative">
-            <h1>Hi, I'm Harris Junaid the Full Stack Developer</h1>
-            <p class="ps-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. t laborum natus qui ad fugiat aspernatur magnam!</p>
+          <div class="banner text text-dark d-grid gap-2 position-relative">
+            <h1 class="fs-6">Hi, I'm Harris Junaid to be a Full Stack Developer</h1>
+            <p class="ps-3 fs-6">
+              The University of Greenwich in England awarded Mr. Harris Junaid a master's degree in Electrical and Communications Engineering. His multidomain industrial experience exceeds twelve years. He had been involved in the integration, configuration, and programming of high-tech programmable systems; he had also served as the company's CEO and lectured at a university.
+            </p>
             <img class="d-none d-lg-block rounded-pill img-fluid w-50 position-absolute top-100 end-0" src="https://lh3.googleusercontent.com/xMcmym4oMATnMowXU2kIhhMk0i5jWxTv-IDCJot3B6jVijXdr1TagVY81pAzknVPcvR9XJJH1p0-z-2DRSyioLGToe1fOVenyK4x47NwWtPt4v8M7wsKYuB74MjTue-AWcIOglhPx-wrLV_XiCvYIYTvUOtA2d873aLjagrelm_dTDa82AxtINrkzCm-gkjrg9YJ3jLt9aoVY2TVYXQzPX_tHD690dDHnvEhO0DPNN1nnO4607EiY3PAxMuPMAsopx_4XJSMiM5VzQ7XBBtU2-QqLjD6cIlLRoIBJqzqUB8NM8iuO8WoKIF2aD3VfUNviDhh4rIpGUhcUN8m1HJAejo6iA67NOoZWpY5-flnwvSfy_Un9pjzW5zX7Adlgv9EDNyY39v-m-pZiM8Mu9TvxOVxDW6jPj0Guq-0tkzOq7WuGu4HhhTeQncCkSrG91tBTqtZqjWhyqg7eA_GDJiQuswUw92hJFiw6r6-lZ4fKrcO3jugyIf7zBLRyigrnH-HDe3wjdIcgQ4mqzjOkATHeeaL6eS1PVHSXi_1nOtrOCpodii-RubEyFOHq3pg7bLH9TAemSfLbKUZ4Y5dJQmmSHLuP0iaJRRaHbU_Rblk2xScU5057PJDXvZBESqQaJ5xjxUDhInPmUj_4C80SkwZiBY8K_Wh-DGprDedATCjYnsMFQIDxOD4pufy8PODPgUiGUd_lt-Bk9IWqdHZ3m559WNmuAF5sH0je9rXt7I5DCjqyUt-XN4S4Vf_M93_ChvvRxNCXUsyd4WSbKxtBMAnp9Y5Whso4ZeBb-XtHojnJV805C2Kp6e8o7amAuB4doK4ATPZPDccqwYbkz40ZJ5DiPZiDNlDEdhPwLStBqcW7cF67GQq_Ax8wVjXe_0rBL_-bX-ICah87bEYjvyn8lWhBymmNhoC7Wda1zNWAY7ny4mB8cSeMUihH-KIv-ya9QM6POMHc_WxqpzyAa7B7S27jMHKBM8w19K_mL7DpQ1TorQylL1FUEgCdf4g=w854-h851-no?authuser=0" alt="Harris Junaid image">
           </div>
         </div>
@@ -309,10 +334,12 @@ a.card-link {
     </div>
   </section>
 
+  
+    <h1 class="heading text-center display-2 mt-5 pt-5 fw-bolder"  id="portfolio">Portfolio</h1>
   <!-- Portfolio          -->
   <!-- ================== -->
-  <section class="portfolio">
-    
+
+<section class="portfolio">
 <div class="container my-5">
     <div class="row bg-primary row-cols-1 row-cols-md-3">
     
@@ -351,6 +378,7 @@ a.card-link {
   
   </section>
 
+  <h1 class="heading text-center display-2 mt-5 pt-5 mb-5 fw-bolder"  id="certifications">Certifications</h1>
   <!-- Certifications     -->
   <!-- ================== -->
   <section class="certificatoins">
@@ -469,7 +497,7 @@ a.card-link {
                          alt="..." />
                         <!-- Certification Modal - Text-->
                         <p class="mb-4 display-2 fw-bolder text-decoration-none">
-                            <a rel="noopener" class="text-decoration-none" href="https://www.linkedin.com/learning/certificates/7b11e1401f7c37902b47c243568960b593ef72ee996894d6043ceeac76d482cf" target="_blank">View Online</a>
+                            <a rel="noopener" class="text-decoration-none" href="https://www.linkedin.com/learning/certificates/7b11e1401f7c37902b47c243568960b593ef72ee996894d6043ceeac76d482cf" target="_blank">Online</a>
                         </p>
                         <button class="btn btn-primary" data-bs-dismiss="modal">
                         <i class="fas fa-xmark fa-fw"></i>
@@ -509,7 +537,7 @@ a.card-link {
                             <a rel="noopener" class="text-decoration-none"
                              href=
                              "https://www.linkedin.com/learning/certificates/52a0df9b62eb681870258ccc82228a6ba3ab3abdd9fe9b2bec8a9b9d1dac7e72"
-                             target="_blank">View Online</a>
+                             target="_blank">Online</a>
                         </p>
                         <button class="btn btn-primary" data-bs-dismiss="modal">
                         <i class="fas fa-xmark fa-fw"></i>
@@ -549,7 +577,7 @@ a.card-link {
                             <a rel="noopener" class="text-decoration-none"
                                 href=
                                 "https://www.linkedin.com/learning/certificates/2decf8ef596bf8a27419e71e0d684a6ed42c4dd1f5fde0cb8f0c5c6f62ab4356"
-                                target="_blank">View Online</a>
+                                target="_blank">Online</a>
                         </p>
                         <button class="btn btn-primary" data-bs-dismiss="modal">
                         <i class="fas fa-xmark fa-fw"></i>
@@ -589,7 +617,7 @@ a.card-link {
                             <a rel="noopener" class="text-decoration-none"
                              href=
                              "https://www.linkedin.com/learning/certificates/92f6f155c6b017b63c4217e362c286e9d93c528d9873fbb34d34e22d37e6fd02"
-                             target="_blank">View Online</a>
+                             target="_blank">Online</a>
                         </p>
                         <button class="btn btn-primary" data-bs-dismiss="modal">
                         <i class="fas fa-xmark fa-fw"></i>
@@ -628,7 +656,7 @@ a.card-link {
                             <p class="mb-4 display-2 fw-bolder text-decoration-none">
                                 <a rel="noopener" class="text-decoration-none"
                                  href="https://www.linkedin.com/learning/certificates/25b521d4aec6b095c1f5b4bdc3563ec6de76260a322b870a694045241b88e619"
-                                 target="_blank">View Online</a>
+                                 target="_blank">Online</a>
                             </p>
                             <button class="btn btn-primary" data-bs-dismiss="modal">
                             <i class="fas fa-xmark fa-fw"></i>
@@ -667,7 +695,7 @@ a.card-link {
                         <p class="mb-4 display-2 fw-bolder text-decoration-none">
                             <a rel="noopener" class="text-decoration-none"
                              href="https://www.coursera.org/account/accomplishments/verify/ZXRMZ7EM4Z7J"
-                             target="_blank">View Online</a>
+                             target="_blank">Online</a>
                         </p>
                         <button class="btn btn-primary" data-bs-dismiss="modal">
                         <i class="fas fa-xmark fa-fw"></i>
@@ -706,7 +734,7 @@ a.card-link {
                             <p class="mb-4 display-2 fw-bolder text-decoration-none">
                                 <a rel="noopener" class="text-decoration-none"
                                  href="https://www.coursera.org/account/accomplishments/verify/D3XX7PTPLSBD"
-                                 target="_blank">View Online</a>
+                                 target="_blank">Online</a>
                             </p>
                             <button class="btn btn-primary" data-bs-dismiss="modal">
                             <i class="fas fa-xmark fa-fw"></i>
@@ -728,7 +756,7 @@ a.card-link {
   </main>
 
     <!-- Footer-->
-<footer class="footer text-center ">
+<footer class="footer text-center" id="contact">
     <div class="container ">
       <div class="row">
         <!-- Footer Location-->
@@ -743,18 +771,21 @@ a.card-link {
         <!-- Footer Social Icons-->
         <div class="col-lg-4 mb-5 mb-lg-0">
           <h4 class="text-uppercase mb-4">Around the Web</h4>
-          <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/harris.junaid"><i class="fab fa-fw fa-facebook-f"></i></a>
-          <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/harrisjunaid22"><i class="fab fa-fw fa-twitter"></i></a>
-          <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/harris-junaid-88752714"><i class="fab fa-fw fa-linkedin-in"></i></a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/harris.junaid" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/harrisjunaid22" target="_blank"><i class="fab fa-fw fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/harris-junaid-88752714" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
           <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://codepen.io/harrisjunaid" target="_blank"><i class="fa-brands fa-codepen"></i></i></a>
+        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/harrisjunaid" target="_blank"><i class="fa-brands fa-github"></i></a>
+        
         </div>
         <!-- Footer Contact Text-->
-        <div class="col-lg-4">
+        <div class="col-lg-4 text-decoration-none">
           <h4 class="text-uppercase mb-4">Contact</h4>
          
-            <ul>
-                <li><a href="mailto:harris.junaid@gmail.com">Send email</a></li>
-                <li><a href="tel:4133151987">Call: 413-315-1987</a></li>
+            <ul class="weight-bolder text-decoration-none fs-4">
+                <li><a class="email text-decoration-none" href="mailto:harris.junaid@gmail.com">Send email</a></li>
+                <li><a class="phone text-decoration-none" href="tel:4133151987">Call: 413-315-1987</a></li>
             </ul>
        
         </div>
@@ -771,5 +802,6 @@ a.card-link {
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" 
   integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
   crossorigin="anonymous"></script>
+  <script src="/js/java.js"></script>
 </body>
 </html>
