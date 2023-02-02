@@ -24,47 +24,6 @@ div.banner-intro {
   max-height: 70vh;
 }
 
-@media (max-width: 780px) {
-  div.card img.card-img-top {
-    display:none;
-  }
-
-  div.card div.card-body {
-  margin-bottom: 15px;  /*space between*/  
-  min-height: 50vh;
-  background-repeat: no-repeat;
-  background-size: cover; /*cover the entire background*/
-  /*   background-blend-mode: screen, normal; */
-  }
-
-  div.PacMen div.card-body {
-  background-image: url('/images/projects/PacMen.png');
-  background-repeat: no-repeat;
-  background-size: cover; /*cover the entire background*/
-  }
-
-  div.Eye-Movement div.card-body {
-    background-image: url('/images/projects/FollowingEyes.png');
-    background-repeat: no-repeat !important;
-    background-size: cover !important; /*cover the entire background*/
-  }
-
-  div.bus-stops div.card-body {
-    background-image: url('/images/projects/BusStops.png');
-    background-repeat: no-repeat;
-    background-size: cover; /*cover the entire background*/
-  }
-  
-  div.selectors div.card-body {
-    background-image: url('/images/projects/selectors.png');
-    background-repeat: no-repeat;
-    background-size: cover; /*cover the entire background*/
-  }
-  
-  div.card-body .card-text {
-    margin-top: 15px; /*gap from card-title */
-  } 
-}
 
 /* ================================================ */
 /*              Portfolio Section                   */
@@ -140,12 +99,6 @@ a.card-link {
   line-height: 2rem;
 }
 
-@media (min-width: 780px) {
-  .cert-modal .cert-modal-title {
-    font-size: 3rem;
-    line-height: 2.5rem;
-  }
-}
     
 /* ================================================ */
 /*              Footer Section               */
@@ -181,4 +134,57 @@ p.display-2 a::after {
 .copyright {
   background-color: #1a252f;
 }
+
+
+/* ================================================ */
+/*              @media                              */
+/* ================================================ */
+
+@media (max-width: 780px) {
+  div.card img.card-img-top {
+    display:none;
+  }
+
+  div.card div.card-body {
+  margin-bottom: 15px;  /*space between*/  
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover; /*cover the entire background*/
+  /*   background-blend-mode: screen, normal; */
+  }
+
+  div.PacMen div.card-body {
+  background-image: url('/images/projects/PacMen.png');
+  background-repeat: no-repeat;
+  background-size: cover; /*cover the entire background*/
+  }
+
+  div.Eye-Movement div.card-body {
+    background-image: url('/images/projects/FollowingEyes.png');
+    background-repeat: no-repeat !important;
+    background-size: cover !important; /*cover the entire background*/
+  }
+
+  div.bus-stops div.card-body {
+    background-image: url('/images/projects/BusStops.png');
+    background-repeat: no-repeat;
+    background-size: cover; /*cover the entire background*/
+  }
+  
+  div.selectors div.card-body {
+    background-image: url('/images/projects/selectors.png');
+    background-repeat: no-repeat;
+    background-size: cover; /*cover the entire background*/
+  }
+  
+  div.card-body .card-text {
+    margin-top: 15px; /*gap from card-title */
+  } 
+
+  .cert-modal .cert-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
       

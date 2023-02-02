@@ -67,7 +67,8 @@
   <section class="banner" id="about">
     <div class="banner container">
   
-      <div class="banner-intro row justify-content-sm-center overflow-hidden">
+      <div class="banner-intro row justify-content-sm-center overflow-hidden"><!--for intro and profile picture-->
+
         <div class="col-xs-12 col-lg-5 overflow-hidden order-lg-2 py-5 px-2">
           <div class="banner text text-dark d-grid gap-2 position-relative">
             <h1 class="fs-6">Hi, I'm Harris Junaid to be a Full Stack Developer</h1>
@@ -83,23 +84,26 @@
         </div>
       </div>
   
-      <div class="row">
-        <div class="col accordion" id="curriculum-vitae">
+      <div class="row"><!--for curriculum-vitae-->
+      <div class="col accordion" id="curriculum-vitae">
           <div class="accordion-item">
             <h2 id="regularHeadingFirst" class="accordion-header">
               <button class="accordion-button bg-dark text-white fw-bold fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#regularCollapseFirst" aria-expanded="true" aria-controls="regularCollapseFirst">
                 Curriculum Vitae
               </button>
             </h2>
-            <div id="regularCollapseFirst" class="accordion-collapse collapse show" aria-labelledby="regularHeadingFirst" data-bs-parent="#curriculum-vitae">
+            <div id="regularCollapseFirst" class="accordion-collapse collapse hide" aria-labelledby="regularHeadingFirst" data-bs-parent="#curriculum-vitae">
               <div class="accordion-body">
                 <iframe src="https://onedrive.live.com/embed?cid=DA2B8446ED8A7024&resid=DA2B8446ED8A7024%2198338&authkey=AMBm-1s-hF5gS9w&em=2" width="100%" height="600px"></iframe>
               </div>
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
+
   </section>
 
   <div id="portfolio"></div>
@@ -591,5 +595,10 @@
     <div class="container"><small>Copyright &copy; Harris Junaid 2023</small></div>
   </div>
  
+    <!-- Bootstrap-->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
 </body>
 </html>
