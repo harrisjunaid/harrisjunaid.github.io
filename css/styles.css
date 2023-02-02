@@ -10,93 +10,92 @@
 /* ================================================ */
 
 .banner.text {
-  /* border: 2px solid red !important;  */
-    background-color: hsla(300, 6%, 79%, 0.7) !important ;
+/* border: 2px solid red !important;  */
+  background-color: hsla(300, 6%, 79%, 0.7) !important ;
+}
+  
+div.banner-intro {
+  /* border: 2px solid red; */
+  background-image: url("https://lh3.googleusercontent.com/n4dbYI6Tbhg9DMOcEH8-xadLeeCGj3NZ1SWvdsBuwckJeM9jRHEqJ6497DlYs7JvWmNBfy-ubkwQ9_ChApd9UhxHrP90fp06VAvO8qBmAkRrWPUdRxZvn0cj1HzJcY_f0uB3VBUnfVfs5DKrmvnnFqOz0yZ-pJ5WRO3u0pflrIxBYVku2k0El6mVYMq1pfCCOerb9eclFvl3Zihp_Zct2UdP4cBbzjzU_jmZl4RLDRXZ8_QCihGnB3Svn1NrXx032O_XXoC15cZ3UE0sfLm_2x9NF9Go560Zb5__Qiy2uWx5prC0gBZVI3Zxgeuod-X8kva7bXfgVe6eIJBUd-G5FoZmkaSBsELi0nDkAiG8nbi6WhMbcXUr8OBVINvlQSK4odEccE_-tbgZgygVMELc_C3XRvolkFkXYRpt6k2eydBp-D5HKQy8hUryjKVXu8W2t9_algwl1IfXDGFzvvpt7yKt9trNlRqhSkOwydcy8i-_-mlpwZuXLz85liveOrJuEjR4cUOgHa1-sIM0os6QNYcGXRoGBySA2kzHh7D_vPAKaquVql_NGhL9NWLEKrV15tsU-1P7CPEM20SzzDSOMkjHry1NQ28g6J3XUhOdrrvxuJsizuouX297ILPxe2v7TesrpqA35ka8rUm29kAR25nBw1TulkpItbRA7w0yEszLLUDjhEmWEgCZtNmJdqGIsDWJ2yeweBF-pMLaUdWkLjGIXOpeWZEQ6TKj3iQ_F5s2JpZ9o78sDg9gJ7JjGOf4HvFrUPOxx1l2ZpKdKteIjAA7fjLxuH_JRkCQbvlHkHb92GG7DUxRH2fQ53oMfR6qs6wZssW0KDA6-c41xPQMpUQIrSqrnrXHeg2M4bsa_iBKF5c-uVTW7N_-dPIO8PNMaX4AbKEq7ntcN8ldGEFQTmLci4rDDE_pMR5AWQZv3-dJMCjhTxE5Ohal9534xCprC3XjAmX02NvYdwh4MS8lUoZwdBZOjSsKTeVT7vttLQCU6olUhrvkv2C2=w2560-h1440-no?authuser=0") !important;
+  background-repeat: no-repeat;
+  background-size: cover; /*cover the entire background*/
+  /*   background-blend-mode: screen, normal; */
+  overflow: scroll;
+  max-height: 70vh;
+}
+
+@media (max-width: 780px) {
+  div.card img.card-img-top {
+    display:none;
+  }
+
+  div.card div.card-body {
+  margin-bottom: 15px;  /*space between*/  
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover; /*cover the entire background*/
+  /*   background-blend-mode: screen, normal; */
+  }
+
+  div.PacMen div.card-body {
+  background-image: url('/images/projects/PacMen.png');
+  background-repeat: no-repeat;
+  background-size: cover; /*cover the entire background*/
+  }
+
+  div.Eye-Movement div.card-body {
+    background-image: url('/images/projects/FollowingEyes.png');
+    background-repeat: no-repeat !important;
+    background-size: cover !important; /*cover the entire background*/
+  }
+
+  div.bus-stops div.card-body {
+    background-image: url('/images/projects/BusStops.png');
+    background-repeat: no-repeat;
+    background-size: cover; /*cover the entire background*/
   }
   
-  div.banner-intro {
-    /* border: 2px solid red; */
-    background-image: url("https://lh3.googleusercontent.com/n4dbYI6Tbhg9DMOcEH8-xadLeeCGj3NZ1SWvdsBuwckJeM9jRHEqJ6497DlYs7JvWmNBfy-ubkwQ9_ChApd9UhxHrP90fp06VAvO8qBmAkRrWPUdRxZvn0cj1HzJcY_f0uB3VBUnfVfs5DKrmvnnFqOz0yZ-pJ5WRO3u0pflrIxBYVku2k0El6mVYMq1pfCCOerb9eclFvl3Zihp_Zct2UdP4cBbzjzU_jmZl4RLDRXZ8_QCihGnB3Svn1NrXx032O_XXoC15cZ3UE0sfLm_2x9NF9Go560Zb5__Qiy2uWx5prC0gBZVI3Zxgeuod-X8kva7bXfgVe6eIJBUd-G5FoZmkaSBsELi0nDkAiG8nbi6WhMbcXUr8OBVINvlQSK4odEccE_-tbgZgygVMELc_C3XRvolkFkXYRpt6k2eydBp-D5HKQy8hUryjKVXu8W2t9_algwl1IfXDGFzvvpt7yKt9trNlRqhSkOwydcy8i-_-mlpwZuXLz85liveOrJuEjR4cUOgHa1-sIM0os6QNYcGXRoGBySA2kzHh7D_vPAKaquVql_NGhL9NWLEKrV15tsU-1P7CPEM20SzzDSOMkjHry1NQ28g6J3XUhOdrrvxuJsizuouX297ILPxe2v7TesrpqA35ka8rUm29kAR25nBw1TulkpItbRA7w0yEszLLUDjhEmWEgCZtNmJdqGIsDWJ2yeweBF-pMLaUdWkLjGIXOpeWZEQ6TKj3iQ_F5s2JpZ9o78sDg9gJ7JjGOf4HvFrUPOxx1l2ZpKdKteIjAA7fjLxuH_JRkCQbvlHkHb92GG7DUxRH2fQ53oMfR6qs6wZssW0KDA6-c41xPQMpUQIrSqrnrXHeg2M4bsa_iBKF5c-uVTW7N_-dPIO8PNMaX4AbKEq7ntcN8ldGEFQTmLci4rDDE_pMR5AWQZv3-dJMCjhTxE5Ohal9534xCprC3XjAmX02NvYdwh4MS8lUoZwdBZOjSsKTeVT7vttLQCU6olUhrvkv2C2=w2560-h1440-no?authuser=0") !important;
+  div.selectors div.card-body {
+    background-image: url('/images/projects/selectors.png');
     background-repeat: no-repeat;
     background-size: cover; /*cover the entire background*/
-    /*   background-blend-mode: screen, normal; */
-    overflow: scroll;
-    max-height: 70vh;
   }
-
-  @media (max-width: 780px) {
-    div.card img.card-img-top {
-      display:none;
-    }
   
-    div.card div.card-body {
-    margin-bottom: 15px;  /*space between*/  
-    min-height: 50vh;
-    background-repeat: no-repeat;
-    background-size: cover; /*cover the entire background*/
-    /*   background-blend-mode: screen, normal; */
-    }
-
-    div.PacMen div.card-body {
-    background-image: url('/images/projects/PacMen.png');
-    background-repeat: no-repeat;
-    background-size: cover; /*cover the entire background*/
-    }
-
-    div.Eye-Movement div.card-body {
-      background-image: url('/images/projects/FollowingEyes.png');
-      background-repeat: no-repeat !important;
-      background-size: cover !important; /*cover the entire background*/
-    }
-
-    div.bus-stops div.card-body {
-      background-image: url('/images/projects/BusStops.png');
-      background-repeat: no-repeat;
-      background-size: cover; /*cover the entire background*/
-    }
-    
-    div.selectors div.card-body {
-      background-image: url('/images/projects/selectors.png');
-      background-repeat: no-repeat;
-      background-size: cover; /*cover the entire background*/
-    }
-    
-    div.card-body .card-text {
-      margin-top: 15px; /*gap from card-title */
-    } 
-  }
+  div.card-body .card-text {
+    margin-top: 15px; /*gap from card-title */
+  } 
+}
 
 /* ================================================ */
 /*              Portfolio Section                   */
 /* ================================================ */
 
-  section.portfolio div.col {
-    /* border: 2px solid blue; */
-    overflow: hidden;
-  }
+section.portfolio div.col {
+  /* border: 2px solid blue; */
+  overflow: hidden;
+}
   
-  div.card {
-    /* border: 3px dashed green; */
-    max-height: 50vh;
-    margin-bottom: 10px;
-    /* overflow: auto; */
-    
-  }
+div.card {
+  /* border: 3px dashed green; */
+  max-height: 50vh;
+  margin-bottom: 10px;
+  /* overflow: auto; */  
+}
   
-  div.card-body .card-title {
-    /* border: 2px solid blue; */
-    text-align: center; 
-  }
+div.card-body .card-title {
+  /* border: 2px solid blue; */
+  text-align: center; 
+}
 
-  div.card-body {
-    /* border: 2px solid red; */
-    overflow: auto;
-  }
+div.card-body {
+  /* border: 2px solid red; */
+  overflow: auto;
+}
     
-  a.card-link {
-    /* color: green; */
-    background-color: hsla(70, 4%, 72%, .6);
-  }
+a.card-link {
+  /* color: green; */
+  background-color: hsla(70, 4%, 72%, .6);
+}
 
 /* ================================================ */
 /*              Certification Section               */
