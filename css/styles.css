@@ -31,26 +31,30 @@
   
     div.card div.card-body {
     margin-bottom: 15px;  /*space between*/  
-      min-height: 50vh;
+    min-height: 50vh;
     background-repeat: no-repeat;
     background-size: cover; /*cover the entire background*/
     /*   background-blend-mode: screen, normal; */
     }
+
     div.PacMen div.card-body {
     background-image: url('/images/projects/PacMen.png');
     background-repeat: no-repeat;
     background-size: cover; /*cover the entire background*/
     }
+
     div.Eye-Movement div.card-body {
       background-image: url('/images/projects/FollowingEyes.png');
       background-repeat: no-repeat !important;
       background-size: cover !important; /*cover the entire background*/
     }
+
     div.bus-stops div.card-body {
       background-image: url('/images/projects/BusStops.png');
       background-repeat: no-repeat;
       background-size: cover; /*cover the entire background*/
     }
+    
     div.selectors div.card-body {
       background-image: url('/images/projects/selectors.png');
       background-repeat: no-repeat;
